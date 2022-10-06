@@ -9,6 +9,9 @@ function Homepage() {
     const loginPage = () => {
         navigate('./Login')
     }
+    const registerPage = () => {
+        navigate('./Register')
+    }
 
     return (
         <>
@@ -16,6 +19,9 @@ function Homepage() {
                 <h1> hello world </h1>
                 <button
                     onClick={loginPage}>Login
+                </button>
+                <button
+                    onClick={registerPage}>Register
                 </button>
             </div>
         </>

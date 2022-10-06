@@ -7,6 +7,7 @@ import { Route, Routes, BrowserRouter
 
 import Homepage from "./contents/Homepage"
 import Login from './contents/Login';
+import Register from './contents/Register';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
     
             <Route path="/Login" 
               element={<Login />} />
+
+            <Route path="/Register" 
+              element={<Register />} />
         </Routes>
       </BrowserRouter>
   );
