@@ -1,14 +1,13 @@
-
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import "../App.css";
   
 function Homepage() {
 
-    const naviagte = useNavigate();
+    const navigate = useNavigate();
 
     const loginPage = () => {
-        naviagte('./Login')
+        navigate('./Login')
     }
 
     return (

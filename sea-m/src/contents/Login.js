@@ -3,13 +3,13 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
   
 function Login() {
-    const naviagte = useNavigate();
+    const navigate = useNavigate();
     const home = () => {
-        naviagte('/');
+        navigate('/');
     }
     return (
         <>
-            <div className="card " >
+            <div className="card" >
                 <p>hello login</p>
             </div>
             <button  onClick={home}>

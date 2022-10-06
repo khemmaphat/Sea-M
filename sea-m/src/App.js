@@ -2,8 +2,7 @@ import React from 'react';
 import './App.css';
 import middlesea from './/img/middle-sea.png';
 
-import {
-  Routes ,Route 
+import { Route, Routes, BrowserRouter 
 } from "react-router-dom";
 
 import Homepage from "./contents/Homepage"
@@ -11,17 +10,15 @@ import Login from './contents/Login';
 
 function App() {
   return (
-    <Router>
-      
-        <Switch>
-          <Route path="/" 
-            component={<Homepage/>} />
+      <BrowserRouter>
+        <Routes>
+            <Route path='/'
+              element={<Homepage />} />
     
-          <Route path="/Login" 
-            component={<Login/>} />
-        </Switch>
-      
-    </Router>
+            <Route path="/Login" 
+              element={<Login />} />
+        </Routes>
+      </BrowserRouter>
   );
 }
 
