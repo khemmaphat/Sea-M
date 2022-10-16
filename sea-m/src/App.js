@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import middlesea from './/img/middle-sea.png';
 
@@ -18,12 +18,12 @@ import './components/Sidebar.css';
 
 function App() {
 
-  const [token, setToken] = useSate("");
+  const [token, setToken] = useState("");
 
   useEffect(() => {
     const hash = window.location.hash;
     console.log(hash);
-  }, [])
+  }, []);
   return (
       <Router>
         <div className='main-body'>
