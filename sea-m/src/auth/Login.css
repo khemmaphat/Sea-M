@@ -1,5 +1,5 @@
 .login-page{
-    background: #1f1f1f;
+    background: #ffffff;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -17,9 +17,9 @@
     width: 200px;
     padding: 15px 0px;
     text-align: center;
-    background: #fefefe;
+    background: #000000;
     border-radius: 50px;
-    color: #1f1f1f;
+    color: #ffffff;
     font-weight: 600;
     margin-top: 20%;
 }

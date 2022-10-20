@@ -14,6 +14,7 @@ import Trending from './contents/Trending';
 import './contents/Homepage.css';
 import Sidebar from './components/Sidebar';
 import './components/Sidebar.css';
+import { setClientToken } from './contents/spotify';
 
 
 function App() {
@@ -21,23 +22,27 @@ function App() {
   const [token, setToken] = useState("");
 
   useEffect(() => {
+    const token = window.localStorage.getItem("token");
     const hash = window.location.hash;
-    console.log(hash);
+    window.location.hash = "";
+    if(!token && hash){
+      const _token = hash.split('&')[0].split('=')[1];
+      window.localStorage.setItem("token", _token);
+      setToken(_token);
+      setClientToken(_token);
+    } else {
+      setToken(token);
+      setClientToken(token);
+    }
   }, []);
-  return (
-      <Router>
+  return !token ? (
+    <Login />
+  ) : (      <Router>
         <div className='main-body'>
-          <Login />
-          {/*<Sidebar />
+          <Sidebar />
         <Routes>
             <Route path="/"
               element={<Library />} /> 
-    
-            <Route path="/Login" 
-              element={<Login />} />
-
-            <Route path="/Register" 
-              element={<Register />} />
 
             <Route path="/feed"
               element={<Feed />} />
@@ -50,7 +55,7 @@ function App() {
 
             <Route path="/favorites"
               element={<Favorites />} />
-  </Routes> */}
+  </Routes>
         </div>
       </Router>
   );
