@@ -4,9 +4,8 @@ import { loginEndpoint } from '../contents/spotify'
 
 export default function login() {
   return (
-    <div class="font-face-ds grid grid-cols-3 gap-4">
-      <div></div>
-      <div class="col-start-2 col-span-4">
+    <div class="font-face-ds grid grid-cols-4">
+      <div class="col-start-2 col-end-4">
           <div>
           <h1>You are the middle in the sea</h1>
           </div>
@@ -17,7 +16,6 @@ export default function login() {
           </div>
         <a href={loginEndpoint}><div className='login-btn'>Log-in</div></a>
       </div>
-      <div></div>
     </div>
   )
 }
