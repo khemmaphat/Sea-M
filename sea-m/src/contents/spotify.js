@@ -20,4 +20,11 @@ export const setClientToken = (token) => {
     });
 };
 
+export const deleteToken = () => {
+    apiClient.interceptors.request.use(async function(config) {
+        config.headers.Authorization = "Bearer " + "";
+        return config;
+    });
+};
+
 export default apiClient;
