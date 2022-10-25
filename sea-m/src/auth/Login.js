@@ -18,7 +18,7 @@ export default function login() {
           </div>
            
           
-        <a href={loginEndpoint}><div className="login-btn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 mt-2 rounded inline-flex items-center text-center">Log-in</div></a>
+        <a href={loginEndpoint}><div className="login-btn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 mt-2 rounded-full inline-flex items-center text-center">Log-in</div></a>
       </div>
     </div>
   )
