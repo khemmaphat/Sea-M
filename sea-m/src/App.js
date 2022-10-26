@@ -39,7 +39,14 @@ function App() {
     <Login />
   ) : (
     <Router>
-      <Homepage />
+      
+      <Routes>
+        <Route path="/"
+          element={<Homepage />} />
+
+        <Route path="/player"
+          element={<Player />} />
+      </Routes>
     </Router>
     
   // <Router>
