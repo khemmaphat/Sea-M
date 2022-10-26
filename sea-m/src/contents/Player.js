@@ -21,7 +21,10 @@ export default function Player() {
   return (
     <div className='screen-container'>
       <div></div>
-      <div></div>
+      <div>
+        <SongCard />
+        <Queue />
+      </div>
     </div>
   )
 }
