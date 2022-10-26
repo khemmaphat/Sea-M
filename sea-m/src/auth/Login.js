@@ -1,6 +1,7 @@
 import React from 'react'
 import { loginEndpoint } from '../contents/spotify'
 
+
 export default function login() {
   return (
     <div className="font-face-ds grid grid-cols-4">
@@ -15,8 +16,7 @@ export default function login() {
           <div className="text-lg ml-2 text-gray-500">
             <p>This website is part of the CPE327 Software Engineering Project.</p>
           </div>
-           
-          
+  
         <a href={loginEndpoint}><div className="login-btn bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 mt-2 rounded-full inline-flex items-center text-center">Log-in</div></a>
       </div>
     </div>
