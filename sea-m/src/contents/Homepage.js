@@ -37,7 +37,7 @@ export default function Homepage() {
       <div className="fixed left-5 bottom-5">
         <div className="flex space-x-4">
           <img className="flex-none w-32" src={AboutUs}/>
-          <img className="flex-initial w-12" src={Github}/>
+          <img className="flex-initial w-12 rounded-full" src={Github}/>
         </div>
       </div>
 
