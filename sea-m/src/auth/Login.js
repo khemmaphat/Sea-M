@@ -1,5 +1,5 @@
 import React from 'react'
-import { loginEndpoint } from '../contents/spotify'
+import { loginEndpoint } from 'contents/spotify'
 
 
 export default function login() {

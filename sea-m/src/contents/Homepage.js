@@ -1,7 +1,4 @@
 import React from 'react';
-import { IconContext } from 'react-icons';
-import { AiFillPlayCircle } from 'react-icons/ai';
-import { useNavigate } from 'react-router';
 
 //import picture for homepage
 import logoName from 'img/Logo-name.png'
@@ -12,10 +9,12 @@ import Logout from 'img/Logout-button.png'
 
 
 export default function Homepage() {
-  const navigate = useNavigate();
-  const playPlaylist = (id) => {
-    navigate('/player', { state: { id: id } });
+
+  function logout(){
+    window.localStorage.removeItem("token");
+    window.location.reload(false);
   }
+
   return (
     <div className="font-face-ds">
       <div className="fixed left-5 top-5">
@@ -30,7 +29,9 @@ export default function Homepage() {
           <img className="flex-auto w-12 h-12 mt-6" src={Github}/>
         </div>
         <div>
-          <img className="fixed right-5 top-5 w-12 h-12" src={Logout}/>
+          <button onClick={logout}>
+            <img className="fixed right-5 top-5 w-12 h-12" src={Logout}/>
+          </button>
         </div>
       </div>
     </div>

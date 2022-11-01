@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import 'App.css';
 
 
 import { BrowserRouter as Router, Routes, Route 
 } from "react-router-dom";
 
-import Login from './auth/Login';
-import Homepage from './contents/Homepage';
-import Feed from './contents/Feed';
-import Library from './contents/Library';
-import Favorites from './contents/Favorites';
-import Player from './contents/Player';
-import Trending from './contents/Trending';
-import { setClientToken } from './contents/spotify';
+import Login from 'auth/Login';
+import Homepage from 'contents/Homepage';
+import Feed from 'contents/Feed';
+import Library from 'contents/Library';
+import Favorites from 'contents/Favorites';
+import Player from 'contents/Player';
+import Trending from 'contents/Trending';
+import { setClientToken } from 'contents/spotify';
 
 
 function App() {
