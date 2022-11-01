@@ -7,6 +7,8 @@ import AboutUs from 'img/About_Us_Button.png'
 import Github from 'img/GitHub-Button.png'
 import Logout from 'img/Logout-button.png'
 
+//import audio player
+import AudioPlayer from 'components/AudioPlayer';
 
 export default function Homepage() {
 
@@ -34,6 +36,7 @@ export default function Homepage() {
           </button>
         </div>
       </div>
+      <AudioPlayer />
     </div>
   )
 }
