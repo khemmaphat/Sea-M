@@ -1,0 +1,18 @@
+.audioPlayer{
+    --primary: #f40082;
+    --secondary: #ffd200;
+
+    align-items: center;
+    display: flex;
+    width: 700px;
+}
+
+.forwardBackward{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 16px;
+    cursor: pointer;
+}
