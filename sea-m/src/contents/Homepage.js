@@ -8,6 +8,7 @@ import logoName from 'img/Logo-name.png'
 import MusicButton from 'img/Music-Button.png'
 import AboutUs from 'img/About_Us_Button.png'
 import Github from 'img/GitHub-Button.png'
+import Logout from 'img/Logout-button.png'
 
 
 export default function Homepage() {
@@ -27,6 +28,9 @@ export default function Homepage() {
         <div className="flex space-x-4">
           <img className="flex-none w-40 h-20" src={AboutUs}/>
           <img className="flex-auto w-12 h-12 mt-6" src={Github}/>
+        </div>
+        <div>
+          <img className="fixed right-5 top-5 w-12 h-12" src={Logout}/>
         </div>
       </div>
     </div>
