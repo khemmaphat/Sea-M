@@ -12,8 +12,6 @@ import Library from './contents/Library';
 import Favorites from './contents/Favorites';
 import Player from './contents/Player';
 import Trending from './contents/Trending';
-import Sidebar from './components/Sidebar';
-import './components/Sidebar.css';
 import { setClientToken } from './contents/spotify';
 
 
