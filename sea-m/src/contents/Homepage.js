@@ -6,6 +6,7 @@ import MusicButton from 'img/Music-Button.png'
 import AboutUs from 'img/About_Us_Button.png'
 import Github from 'img/GitHub-Button.png'
 import Logout from 'img/Logout-button.png'
+import CatAbout from 'img/Cat-About-Us.png'
 
 //import components
 import AudioPlayer from 'components/AudioPlayer';
@@ -47,7 +48,22 @@ export default function Homepage() {
       </div>
       <AudioPlayer />
       <Modal isVisible={showModal}  onClose={() => setShowModal(false)}>
-        <h3> dasdasdsad</h3>
+        <div>
+          <img className="w-36" src={CatAbout} />
+          <div>We are CPE 34 student</div>
+          <div><p>
+          This website is part of the CPE327 course. It is a music-related website<br/>
+          that makes it more accessible for the visually impaired.<br/>
+          </p></div>
+          <div>
+            <h5>Members</h5>
+            <p>1. Khemmaphat 1008</p>
+            <p>2. xxxxxxx 1xxx</p>
+            <p>3. xxxxxxx 1xxx</p>
+            <p>4. xxxxxxx 1xxx</p>
+            <p>5. xxxxxxx 1xxx</p>
+          </div>
+        </div>
       </Modal>
     </div>
   )
