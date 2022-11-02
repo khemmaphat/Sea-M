@@ -12,8 +12,8 @@ const Modal = ({ isVisible, onClose, children }) => {
     return (
         <div id="wrapper" onClick={handleClose}>
             <div className="flex justify-center m-16"> 
-                <div className="bg-amber-50 m-4">
-                    <button onClick={() => onClose()}><img className="hover:scale-110 w-4 h-4 ml-72 mt-2" src={Close}/></button>
+                <div className="flex flex-col bg-amber-50 w-96">
+                    <button onClick={() => onClose()}><img className="hover:scale-110 w-4 h-4 ml-auto mr-2 mt-2" src={Close}/></button>
                     {children}
                 </div>
             </div>
