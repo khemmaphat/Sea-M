@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //import picture for homepage
 import logoName from 'img/Logo-name.png'
@@ -7,10 +7,15 @@ import AboutUs from 'img/About_Us_Button.png'
 import Github from 'img/GitHub-Button.png'
 import Logout from 'img/Logout-button.png'
 
-//import audio player
+//import components
 import AudioPlayer from 'components/AudioPlayer';
+import Modal from 'components/Modal';
+;
+
 
 export default function Homepage() {
+
+  const [showModal, setShowModal] = useState(false);
 
   function logout(){
     window.localStorage.removeItem("token");
@@ -27,16 +32,23 @@ export default function Homepage() {
       </div>
       <div className="fixed left-5 bottom-5">
         <div className="flex space-x-4">
-          <img className="flex-none w-40 h-20" src={AboutUs}/>
-          <img className="flex-auto w-12 h-12 mt-6" src={Github}/>
+            <button onClick={() => setShowModal(true)}>
+              <img className="flex-none w-40 h-20" src={AboutUs}/>
+            </button>
+          <a href='https://github.com/khemmaphat/Sea-M.git'>
+            <button><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
+          </a>
         </div>
         <div>
           <button onClick={logout}>
-            <img className="fixed right-5 top-5 w-12 h-12" src={Logout}/>
+            <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout}/>
           </button>
         </div>
       </div>
       <AudioPlayer />
+      <Modal isVisible={showModal}  onClose={() => setShowModal(false)}>
+        <h3> dasdasdsad</h3>
+      </Modal>
     </div>
   )
 }
