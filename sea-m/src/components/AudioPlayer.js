@@ -71,9 +71,20 @@ const AudioPlayer = () => {
         changeRange();
     }
 
+    function Iframe(props) {
+        return (<div dangerouslySetInnerHTML={ {__html:  props.iframe?props.iframe:""}} />);
+    }
+
+    const iframe = '<iframe data-v-4061fa9a="" id="spotify" src="https://open.spotify.com/embed/playlist/7Bg9W2mPUH4dkwhddHDvFK?utm_source=generator" allowfullscreen="allowfullscreen" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="border-radius: 12px;" width="100%" height="80" frameborder="0"></iframe>';
+
     return (
         <div className="flex items-center justify-center">
-            <audio ref={audioPlayer} src={firstSong} preload="metadata"></audio>
+            <Iframe iframe={iframe} />
+            <audio ref={audioPlayer} preload="metadata">
+                <source src={firstSong}></source>
+                <source src={secondSong}></source>
+                <source src={thirdSong}></source>
+            </audio>
             <button className="flex transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300" onClick={backTen}><BsArrowLeftShort /> 10</button>
             <button className="flex 
                 transition 
