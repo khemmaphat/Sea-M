@@ -34,7 +34,7 @@ export default function Homepage() {
       <div className="fixed left-5 bottom-5">
         <div className="flex space-x-4">
             <button onClick={() => setShowModal(true)}>
-              <img className="flex-none w-40 h-20" src={AboutUs}/>
+              <img className="hover:scale-110 flex-none w-40 h-20" src={AboutUs}/>
             </button>
           <a href='https://github.com/khemmaphat/Sea-M.git'>
             <button><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
@@ -48,20 +48,22 @@ export default function Homepage() {
       </div>
       <AudioPlayer />
       <Modal isVisible={showModal}  onClose={() => setShowModal(false)}>
-        <div>
-          <img className="w-36" src={CatAbout} />
-          <div>We are CPE 34 student</div>
-          <div><p>
-          This website is part of the CPE327 course. It is a music-related website<br/>
-          that makes it more accessible for the visually impaired.<br/>
+        <div className="flex flex-col m-2">
+          <img className="w-36 m-auto" src={CatAbout} />
+          <div className="m-auto text-2xl font-bold">We are CPE 34 student</div>
+          <div className="text-base tracking-wide"><p>
+          This website is part of the CPE327 course. It is a music-related website
+          that makes it more accessible for the visually impaired.<br/><br/>
           </p></div>
           <div>
-            <h5>Members</h5>
-            <p>1. Khemmaphat 1008</p>
-            <p>2. xxxxxxx 1xxx</p>
-            <p>3. xxxxxxx 1xxx</p>
-            <p>4. xxxxxxx 1xxx</p>
-            <p>5. xxxxxxx 1xxx</p>
+            <h5 className="font-bold">Members</h5>
+            <div className="ml-4">
+              <p>1. Khemmaphat 1008</p>
+              <p>2. xxxxxxx 1xxx</p>
+              <p>3. xxxxxxx 1xxx</p>
+              <p>4. xxxxxxx 1xxx</p>
+              <p>5. xxxxxxx 1xxx</p>
+            </div>
           </div>
         </div>
       </Modal>
