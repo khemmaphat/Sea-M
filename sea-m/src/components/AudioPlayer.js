@@ -12,20 +12,20 @@ const AudioPlayer = () => {
         const id = e.currentTarget.id
         console.log(id);
         if (id == "1") {
-            document.getElementById("spotify").src = "https://open.spotify.com/embed/playlist/2DQu4yw3Bx58eNEZYIevDl?utm_source=generator";
+            document.getElementById("spotify").src = "https://open.spotify.com/embed/playlist/1dp2ehS1LG04Us5laRRIJO?utm_source=generator";
         } else if (id == "2") {
-            document.getElementById("spotify").src = "https://open.spotify.com/embed/playlist/4tJ5q6xFg4dACbauIkjTCJ?utm_source=generator";
+            document.getElementById("spotify").src = "https://open.spotify.com/embed/playlist/30iLm4Sbx2LeZ1IdUKGjGS?utm_source=generator";
         } else {
-            document.getElementById("spotify").src = "https://open.spotify.com/embed/playlist/7Bg9W2mPUH4dkwhddHDvFK?utm_source=generator";
+            document.getElementById("spotify").src = "https://open.spotify.com/embed/album/4y9hzfVTHY7lHGpzqgiI4a?utm_source=generator";
         }
     };
 
     return (
         <div className="flex items-center justify-center">
             <Iframe iframe={iframe} />
-            <p id="1" data-v-4061fa9a="" className="text-sm mx-3 text-gray-500 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Chill beat</p>
-            <p id="2" data-v-4061fa9a="" className="text-sm mx-3 text-gray-500 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Dim light with lonely vibe</p>
-            <p id="3" data-v-4061fa9a="" className="text-sm mx-3 text-gray-500 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Sentimental R&amp;B/hiphop</p>
+            <p id="1" data-v-4061fa9a="" className="text-sm mx-3 text-gray-500 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Morning beat</p>
+            <p id="2" data-v-4061fa9a="" className="text-sm mx-3 text-gray-500 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Afternoon vibes</p>
+            <p id="3" data-v-4061fa9a="" className="text-sm mx-3 text-gray-500 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Evening chill</p>
         </div>
     )
 }
