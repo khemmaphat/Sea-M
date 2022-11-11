@@ -6,7 +6,7 @@ const AudioPlayer = () => {
         return (<div dangerouslySetInnerHTML={ {__html:  props.iframe?props.iframe:""}} />);
     }
 
-    let iframe = '<iframe data-v-4061fa9a="" id="spotify" src="https://open.spotify.com/embed/playlist/7Bg9W2mPUH4dkwhddHDvFK?utm_source=generator" allowfullscreen="allowfullscreen" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="border-radius: 12px;" width="100%" height="80" frameborder="0"></iframe>';
+    let iframe = '<iframe  id="spotify" src="https://open.spotify.com/embed/playlist/7Bg9W2mPUH4dkwhddHDvFK?utm_source=generator" allowfullscreen="allowfullscreen" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="border-radius: 12px;" width="100%" height="80" frameborder="0"></iframe>';
 
     function changePlaylist(e) {
         const id = e.currentTarget.id
@@ -21,11 +21,15 @@ const AudioPlayer = () => {
     };
 
     return (
-        <div className="flex items-center justify-center">
-            <Iframe iframe={iframe} />
-            <p id="1" data-v-4061fa9a="" className="text-sm mx-3 text-gray-500 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Morning beat</p>
-            <p id="2" data-v-4061fa9a="" className="text-sm mx-3 text-gray-500 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Afternoon vibes</p>
-            <p id="3" data-v-4061fa9a="" className="text-sm mx-3 text-gray-500 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Evening chill</p>
+        <div className="z-40 flex flex-col ">
+            <div className="text-2xl ml-2"> Music</div>
+            <div className="m-2"><Iframe iframe={iframe} /></div>
+            <div className="text-xl ml-2">Playlists</div>
+            <div className="mx-2">
+                <p id="1" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Morning beat</p>
+                <p id="2" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Afternoon vibes</p>
+                <p id="3" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Evening chill</p>
+            </div>
         </div>
     )
 }

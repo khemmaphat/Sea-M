@@ -11,12 +11,14 @@ import CatAbout from 'img/Cat-About-Us.png'
 //import components
 import AudioPlayer from 'components/AudioPlayer';
 import Modal from 'components/Modal';
-;
+
+
 
 
 export default function Homepage() {
 
   const [showModal, setShowModal] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
 
   function logout(){
     window.localStorage.removeItem("token");
@@ -28,7 +30,9 @@ export default function Homepage() {
       <div className="fixed left-5 top-5">
         <div className="flex space-x-4">
           <img className="flex-none w-72 h-36" src={logoName}/>
-          <img className="flex-auto h-[5.5rem] mt-7" src={MusicButton}/>
+          <button onClick={() => setShowModal2(true)}>
+            <img className="hover:scale-110 flex-auto h-[5.5rem]" src={MusicButton}/>
+          </button>
         </div>
       </div>
       <div className="fixed left-5 bottom-5">
@@ -46,13 +50,12 @@ export default function Homepage() {
           </button>
         </div>
       </div>
-      <AudioPlayer />
       <Modal isVisible={showModal}  onClose={() => setShowModal(false)}>
-        <div className="flex flex-col m-2">
+        <div className="z-30 flex flex-col m-2">
           <img className="w-36 m-auto" src={CatAbout} />
           <div className="m-auto text-2xl font-bold">We are CPE 34 student</div>
           <div className="text-base tracking-wide"><p>
-          This website is part of the CPE327 course. It is a music-related website
+          This website is part of the CPE327 course. It is a music website
           that makes it more accessible for the visually impaired.<br/><br/>
           </p></div>
           <div>
@@ -66,6 +69,9 @@ export default function Homepage() {
             </div>
           </div>
         </div>
+      </Modal>
+      <Modal isVisible={showModal2}  onClose={() => setShowModal2(false)}>
+        <AudioPlayer />
       </Modal>
     </div>
   )
