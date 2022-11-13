@@ -7,14 +7,14 @@ export default function login() {
     <div class="font-face-ds grid grid-cols-4">
       <div class="col-start-2 col-end-4">
           <div class="text-4xl text-center" >
-          <h1>You are the middle in the sea</h1>
+          <h1 tabindex="0">You are the middle in the sea</h1>
           </div >
             <img class="scale-75 mx-auto"  alt="Boat" src="https://cdn.discordapp.com/attachments/1032286364315680818/1032286398159523870/unknown.png"/>
           <div class="text-2xl">
-            <h3>Login to sail to nearby island</h3>
+            <h3 tabindex="0">Login to sail to nearby island</h3>
           </div>
           <div class="text-lg ml-2 text-gray-500">
-            <p>This website is part of the CPE327 Software Engineering Project.</p>
+            <p tabindex="0">This website is part of the CPE327 Software Engineering Project.</p>
           </div>
            
           
