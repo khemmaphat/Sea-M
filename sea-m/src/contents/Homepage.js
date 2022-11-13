@@ -40,7 +40,7 @@ export default function Homepage() {
             <button onClick={() => setShowModal(true)}>
               <img className="hover:scale-110 flex-none w-40 h-20" src={AboutUs}/>
             </button>
-          <a href='https://github.com/khemmaphat/Sea-M.git'>
+          <a href='https://github.com/khemmaphat/Sea-M.git' target="_blank">
             <button><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
           </a>
         </div>
