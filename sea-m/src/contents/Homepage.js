@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 //import picture for homepage
 import logoName from 'img/Logo-name.png'
@@ -12,8 +12,8 @@ import CatAbout from 'img/Cat-About-Us.png'
 import AudioPlayer from 'components/AudioPlayer';
 import Modal from 'components/Modal';
 
-
-
+//import background audio
+import wave from 'audio/sea-wave.mp3';
 
 export default function Homepage() {
 
@@ -24,6 +24,11 @@ export default function Homepage() {
     window.localStorage.removeItem("token");
     window.location.reload(false);
   }
+
+  useEffect (() => {
+    const myaudio = document.getElementById("myaudio");
+    myaudio.volume = 0.05;
+  }, []);
 
   return (
     <div className="font-face-ds">
@@ -62,10 +67,10 @@ export default function Homepage() {
             <h5 className="font-bold">Members</h5>
             <div className="ml-4">
               <p>1. Khemmaphat 1008</p>
-              <p>2. xxxxxxx 1xxx</p>
-              <p>3. xxxxxxx 1xxx</p>
-              <p>4. xxxxxxx 1xxx</p>
-              <p>5. xxxxxxx 1xxx</p>
+              <p>2. Natad 1xxx</p>
+              <p>3. Tayuth 1027</p>
+              <p>4. Thanaphat 1xxx</p>
+              <p>5. Thanwa 1xxx</p>
             </div>
           </div>
         </div>
@@ -73,6 +78,9 @@ export default function Homepage() {
       <Modal isVisible={showModal2}  onClose={() => setShowModal2(false)}>
         <AudioPlayer />
       </Modal>
+      <audio id="myaudio" autoPlay loop >
+        <source src={wave} />
+      </audio>
     </div>
   )
 }
