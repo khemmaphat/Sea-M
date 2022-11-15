@@ -4,8 +4,11 @@ import { loginEndpoint } from '../contents/spotify'
 
 export default function login() {
   return (
+     
+
     <div class="font-face-ds grid grid-cols-4">
-      <div class="col-start-2 col-end-4">
+     
+      <div tabindex="-1" class="col-start-2 col-end-4">
           <div class="text-4xl text-center" >
           <h1 tabindex="0">You are the middle in the sea</h1>
           </div >
