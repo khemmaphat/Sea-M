@@ -12,7 +12,7 @@ export default function login() {
           <div class="text-4xl text-center" >
           <h1 tabindex="0">You are the middle in the sea</h1>
           </div >
-            <img class="scale-75 mx-auto"  alt="Boat" src="https://cdn.discordapp.com/attachments/1032286364315680818/1032286398159523870/unknown.png"/>
+            <img tabindex="-1" class="scale-75 mx-auto"  alt="Boat" src="https://cdn.discordapp.com/attachments/1032286364315680818/1032286398159523870/unknown.png"/>
           <div class="text-2xl">
             <h3 tabindex="0">Login to sail to nearby island</h3>
           </div>
