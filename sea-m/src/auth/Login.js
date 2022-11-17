@@ -14,7 +14,7 @@ export default function login() {
             <h3 tabindex="0">Login to sail to nearby island</h3>
           </div>
           <div className="text-lg ml-2 text-gray-500">
-            <ptabindex="0">This website is part of the CPE327 Software Engineering Project.</p>
+            <p tabindex="0">This website is part of the CPE327 Software Engineering Project.</p>
           </div>
   
         <a href={loginEndpoint} role="button" ><div className="login-btn bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 mt-2 rounded-full inline-flex items-center text-center">Log-in</div></a>
