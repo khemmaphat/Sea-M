@@ -15,7 +15,7 @@ export default function login() {
             <h3 tabindex="0">Login to sail to nearby island</h3>
           </div>
           <div className="text-lg ml-2 text-gray-500">
-            <ptabindex="0">This website is part of the CPE327 Software Engineering Project.</p>
+            <p tabindex="0">This website is part of the CPE327 Software Engineering Project.</p>
           </div>
 
         {useMultipleKeyPress(()=>window.open(loginEndpoint,"_self"),["Shift","E"])}
