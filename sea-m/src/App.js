@@ -57,7 +57,9 @@ function App() {
               element={<Favorites />} />
   </Routes>
         </div>
+        <script src="Text.js"></script>
       </Router>
+      
   );
 }
 
