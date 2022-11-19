@@ -5,4 +5,4 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 TestCase1
-    Log    Hello world
+    Open Browser    http://localhost:3000    chrome
