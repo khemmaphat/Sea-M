@@ -2,10 +2,12 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${browser}          chrome
-${url}       http://localhost:3000
+${HOST}                 localhost
+${PORT}                 3000
+${BROWSER}              chrome
+${SERVER}               http://${HOST}:${PORT}
 
 *** Test Cases ***
-TestCase1
-    Open Browser    ${url}    ${browser}
+Test Login-button
+    Open Browser    ${SERVER}    ${BROWSER}
     Click Element    id:login-button

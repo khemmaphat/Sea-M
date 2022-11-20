@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20221119 20:53:19.073" rpa="false" schemaversion="3">
-<suite id="s1" name="Testcase" source="C:\Users\tayut\OneDrive\Desktop\Sea-M\Sea-M\sea-m\robot\testcase.robot">
-<test id="s1-t1" name="TestCase1" line="9">
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221120 17:31:46.098" rpa="false" schemaversion="3">
+<suite id="s1" name="Testcase" source="C:\CPE327-project\sea-m\robot\testcase.robot">
+<test id="s1-t1" name="Test Login-button" line="11">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221119 20:53:19.951" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
-<status status="PASS" starttime="20221119 20:53:19.950" endtime="20221119 20:53:24.686"/>
+<msg timestamp="20221120 17:31:46.266" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20221120 17:31:46.266" endtime="20221120 17:31:48.539"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221119 20:53:24.696" level="INFO">Clicking element 'id:login-button'.</msg>
-<status status="PASS" starttime="20221119 20:53:24.694" endtime="20221119 20:53:55.656"/>
+<msg timestamp="20221120 17:31:48.540" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221120 17:31:48.540" endtime="20221120 17:31:49.831"/>
 </kw>
-<status status="PASS" starttime="20221119 20:53:19.945" endtime="20221119 20:53:55.664"/>
+<status status="PASS" starttime="20221120 17:31:46.265" endtime="20221120 17:31:49.832"/>
 </test>
-<status status="PASS" starttime="20221119 20:53:19.082" endtime="20221119 20:53:55.668"/>
+<status status="PASS" starttime="20221120 17:31:46.099" endtime="20221120 17:31:49.833"/>
 </suite>
 <statistics>
 <total>
