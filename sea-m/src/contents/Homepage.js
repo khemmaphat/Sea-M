@@ -51,7 +51,7 @@ export default function Homepage() {
         </div>
         <div>
           <button onClick={logout}>
-            <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " id="logout-button" src={Logout}/>
+            <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout} id="logout-button"/>
           </button>
         </div>
       </div>
