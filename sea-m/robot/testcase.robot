@@ -8,8 +8,7 @@ ${BROWSER}              chrome
 ${SERVER}               http://${HOST}:${PORT}
 
 *** Keywords ***
-clicl Topic
-    Click Element    id:login-button
+
 
 *** Test Cases ***
 Test Login-button
