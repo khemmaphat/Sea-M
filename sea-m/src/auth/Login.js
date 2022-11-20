@@ -19,7 +19,7 @@ export default function login() {
           </div>
 
         {useMultipleKeyPress(()=>window.open(loginEndpoint,"_self"),["Shift","E"])}
-        <a href={loginEndpoint} role="button" ><div className="login-btn bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 mt-2 rounded-full inline-flex items-center text-center">Log-in</div></a>
+        <a href={loginEndpoint} id="login-button" role="button" ><div className="login-btn bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 mt-2 rounded-full inline-flex items-center text-center">Log-in</div></a>
    
      </div>
     </div>
