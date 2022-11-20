@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221120 17:31:46.098" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221120 18:44:36.824" rpa="false" schemaversion="3">
 <suite id="s1" name="Testcase" source="C:\CPE327-project\sea-m\robot\testcase.robot">
-<test id="s1-t1" name="Test Login-button" line="11">
+<test id="s1-t1" name="Test Login-button" line="15">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${SERVER}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221120 17:31:46.266" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
-<status status="PASS" starttime="20221120 17:31:46.266" endtime="20221120 17:31:48.539"/>
+<msg timestamp="20221120 18:44:36.995" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20221120 18:44:36.995" endtime="20221120 18:44:39.253"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221120 17:31:48.540" level="INFO">Clicking element 'id:login-button'.</msg>
-<status status="PASS" starttime="20221120 17:31:48.540" endtime="20221120 17:31:49.831"/>
+<msg timestamp="20221120 18:44:39.254" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221120 18:44:39.253" endtime="20221120 18:44:40.578"/>
 </kw>
-<status status="PASS" starttime="20221120 17:31:46.265" endtime="20221120 17:31:49.832"/>
+<status status="PASS" starttime="20221120 18:44:36.994" endtime="20221120 18:44:40.579"/>
 </test>
-<status status="PASS" starttime="20221120 17:31:46.099" endtime="20221120 17:31:49.833"/>
+<status status="PASS" starttime="20221120 18:44:36.825" endtime="20221120 18:44:40.580"/>
 </suite>
 <statistics>
 <total>
