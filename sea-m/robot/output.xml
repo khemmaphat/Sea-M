@@ -1,76 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221120 20:59:26.992" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221120 21:41:02.256" rpa="false" schemaversion="3">
 <suite id="s1" name="Testcase" source="C:\CPE327-project\sea-m\robot\testcase.robot">
-<test id="s1-t1" name="Test Login-button" line="18">
+<test id="s1-t1" name="Test Login" line="18">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${SERVER}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221120 20:59:27.222" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
-<status status="PASS" starttime="20221120 20:59:27.222" endtime="20221120 20:59:29.478"/>
+<msg timestamp="20221120 21:41:02.460" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20221120 21:41:02.459" endtime="20221120 21:41:04.679"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221120 20:59:29.479" level="INFO">Clicking element 'id:login-button'.</msg>
-<status status="PASS" starttime="20221120 20:59:29.478" endtime="20221120 20:59:30.790"/>
+<msg timestamp="20221120 21:41:04.680" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221120 21:41:04.680" endtime="20221120 21:41:06.023"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:login-username</arg>
 <arg>${username_text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221120 20:59:30.790" level="INFO">Typing text 'a5609khem@gmail.com' into text field 'id:login-username'.</msg>
-<status status="PASS" starttime="20221120 20:59:30.790" endtime="20221120 20:59:30.949"/>
+<msg timestamp="20221120 21:41:06.024" level="INFO">Typing text 'a5609khem@gmail.com' into text field 'id:login-username'.</msg>
+<status status="PASS" starttime="20221120 21:41:06.024" endtime="20221120 21:41:06.183"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>id:login-password</arg>
 <arg>${password_text}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221120 20:59:30.950" level="INFO">Typing password into text field 'id:login-password'.</msg>
-<msg timestamp="20221120 20:59:30.982" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221120 20:59:31.078" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221120 20:59:30.949" endtime="20221120 20:59:31.078"/>
+<msg timestamp="20221120 21:41:06.184" level="INFO">Typing password into text field 'id:login-password'.</msg>
+<msg timestamp="20221120 21:41:06.214" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221120 21:41:06.308" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221120 21:41:06.184" endtime="20221120 21:41:06.308"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221120 20:59:31.079" level="INFO">Clicking element 'id:login-button'.</msg>
-<status status="PASS" starttime="20221120 20:59:31.079" endtime="20221120 20:59:31.121"/>
+<msg timestamp="20221120 21:41:06.309" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221120 21:41:06.309" endtime="20221120 21:41:06.348"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221120 20:59:31.122" endtime="20221120 20:59:31.708"/>
+<status status="PASS" starttime="20221120 21:41:06.349" endtime="20221120 21:41:06.966"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221120 20:59:31.709" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]'.</msg>
-<status status="PASS" starttime="20221120 20:59:31.709" endtime="20221120 20:59:31.748"/>
+<msg timestamp="20221120 21:41:06.967" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]'.</msg>
+<status status="PASS" starttime="20221120 21:41:06.966" endtime="20221120 21:41:07.004"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:logout-button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221120 20:59:31.749" endtime="20221120 20:59:32.139"/>
+<status status="PASS" starttime="20221120 21:41:07.005" endtime="20221120 21:41:07.465"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:logout-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221120 20:59:32.140" level="INFO">Clicking element 'id:logout-button'.</msg>
-<status status="PASS" starttime="20221120 20:59:32.140" endtime="20221120 20:59:32.271"/>
+<msg timestamp="20221120 21:41:07.466" level="INFO">Clicking element 'id:logout-button'.</msg>
+<status status="PASS" starttime="20221120 21:41:07.466" endtime="20221120 21:41:07.551"/>
 </kw>
-<status status="PASS" starttime="20221120 20:59:27.221" endtime="20221120 20:59:32.271"/>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221120 21:41:07.552" endtime="20221120 21:41:09.656"/>
+</kw>
+<status status="PASS" starttime="20221120 21:41:02.459" endtime="20221120 21:41:09.656"/>
 </test>
-<status status="PASS" starttime="20221120 20:59:26.994" endtime="20221120 20:59:32.273"/>
+<test id="s1-t2" name="Test Login-with-shortcut-keys" line="30">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221120 21:41:09.658" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20221120 21:41:09.658" endtime="20221120 21:41:11.891"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<arg>SHIFT+E</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221120 21:41:11.893" level="INFO">Sending key(s) ('SHIFT+E',) to id:login-button element.</msg>
+<msg timestamp="20221120 21:41:12.192" level="INFO">Pressing special key SHIFT down.</msg>
+<msg timestamp="20221120 21:41:12.193" level="INFO">Sending key E</msg>
+<msg timestamp="20221120 21:41:12.193" level="INFO">Releasing special key SHIFT.</msg>
+<status status="PASS" starttime="20221120 21:41:11.892" endtime="20221120 21:41:13.439"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<arg>${username_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221120 21:41:13.439" level="INFO">Typing text 'a5609khem@gmail.com' into text field 'id:login-username'.</msg>
+<status status="PASS" starttime="20221120 21:41:13.439" endtime="20221120 21:41:13.590"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password_text}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221120 21:41:13.590" level="INFO">Typing password into text field 'id:login-password'.</msg>
+<msg timestamp="20221120 21:41:13.624" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221120 21:41:13.722" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221120 21:41:13.590" endtime="20221120 21:41:13.722"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221120 21:41:13.723" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221120 21:41:13.722" endtime="20221120 21:41:13.763"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221120 21:41:13.764" endtime="20221120 21:41:14.394"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221120 21:41:14.395" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]'.</msg>
+<status status="PASS" starttime="20221120 21:41:14.395" endtime="20221120 21:41:14.435"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221120 21:41:14.436" endtime="20221120 21:41:14.878"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221120 21:41:14.879" level="INFO">Clicking element 'id:logout-button'.</msg>
+<status status="PASS" starttime="20221120 21:41:14.879" endtime="20221120 21:41:14.962"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221120 21:41:14.962" endtime="20221120 21:41:17.057"/>
+</kw>
+<status status="PASS" starttime="20221120 21:41:09.658" endtime="20221120 21:41:17.058"/>
+</test>
+<status status="PASS" starttime="20221120 21:41:02.258" endtime="20221120 21:41:17.059"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
 </suite>
 </statistics>
 <errors>
