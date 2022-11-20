@@ -23,3 +23,5 @@ Test Login-button
     Click Element    id:login-button
     Wait Until Element Is Visible    //*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
     Click Element    xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
+    Wait Until Element Is Visible    id:logout-button
+    Click Element    id:logout-button
