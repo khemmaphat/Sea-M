@@ -1,15 +1,19 @@
 let msg = new SpeechSynthesisUtterance();
 let voices = speechSynthesis.getVoices();
 msg.voice = voices[0];
-let tags = document.querySelectorAll("div,a,button,title,h5,p"); 
-let images = document.images
+
+let tags = document.querySelectorAll("div,a,button,h5,p"); 
  
+
 tags.forEach((tag) => {
     tag.addEventListener('focusin', (e) => {
         if(e.target.tagName.toLowerCase() ==="button")
-        {
+        { 
+        
            msg.text = e.target.ariaLabel; 
            speechSynthesis.speak(msg);
+        
+           
            
           
         }
@@ -24,8 +28,8 @@ tags.forEach((tag) => {
             msg.text = e.target.innerText;                      
         speechSynthesis.speak(msg);
          }      
-         // console.dir(e.target);  
-         //console.log(e.target);  
+        //  console.dir(e.target);  
+        // console.log(e.target);  
     },);
 }); 
 tags.forEach((tag) => {
