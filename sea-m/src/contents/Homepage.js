@@ -81,7 +81,8 @@ export default function Homepage() {
       <audio id="myaudio" autoPlay loop >
         <source src={wave} />
       </audio>
-      <script src="Text.js"></script>
+      <script src="Text.js" async></script>
+      
     </div>
   )
 }
