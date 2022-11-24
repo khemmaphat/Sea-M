@@ -20,11 +20,13 @@ export default function Homepage() {
   const [showModal, setShowModal] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
 
+  {/* logout function */}
   function logout(){
     window.localStorage.removeItem("token");
     window.location.reload(false);
   }
 
+  {/* hook for reducing audio volume */}
   useEffect (() => {
     const myaudio = document.getElementById("myaudio");
     myaudio.volume = 0.05;
@@ -78,6 +80,7 @@ export default function Homepage() {
       <Modal isVisible={showModal2}  onClose={() => setShowModal2(false)}>
         <AudioPlayer />
       </Modal>
+      {/* audio player  */}
       <audio id="myaudio" autoPlay loop >
         <source src={wave} />
       </audio>
