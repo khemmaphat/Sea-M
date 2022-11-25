@@ -11,9 +11,10 @@ import CatAbout from 'img/Cat-About-Us.png'
 //import components
 import AudioPlayer from 'components/AudioPlayer';
 import Modal from 'components/Modal';
-
+import { useMultipleKeyPress,useOnKeyPress } from '../Shortcutkey';
 //import background audio
 import wave from 'audio/sea-wave.mp3';
+
 
 export default function Homepage() {
 
@@ -24,7 +25,6 @@ export default function Homepage() {
     window.localStorage.removeItem("token");
     window.location.reload(false);
   }
-
   useEffect (() => {
     const myaudio = document.getElementById("myaudio");
     myaudio.volume = 0.05;
@@ -46,16 +46,21 @@ export default function Homepage() {
               <img className="hover:scale-110 flex-none w-40 h-20" src={AboutUs}/>
             </button>
           <a href='https://github.com/khemmaphat/Sea-M.git' target="_blank">
+          {useMultipleKeyPress(()=>window.open('https://github.com/khemmaphat/Sea-M.git',"_self"),["Shift","V"])}
             <button><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
           </a>
         </div>
         <div>
           <button onClick={logout}>
+          {useMultipleKeyPress(()=>logout(),["Shift","A"])}
             <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout}/>
           </button>
         </div>
       </div>
+      
       <Modal isVisible={showModal}  onClose={() => setShowModal(false)}>
+        {useMultipleKeyPress(()=>setShowModal(true),["Shift","K"])}
+        {useMultipleKeyPress(()=>setShowModal(false),["Shift","J"])}
         <div className="z-30 flex flex-col m-2">
           <img className="w-36 m-auto" src={CatAbout} />
           <div className="m-auto text-2xl font-bold">We are CPE 34 student</div>
@@ -76,6 +81,9 @@ export default function Homepage() {
         </div>
       </Modal>
       <Modal isVisible={showModal2}  onClose={() => setShowModal2(false)}>
+      {useMultipleKeyPress(()=>setShowModal2(true),["Shift","O"])}
+      {useMultipleKeyPress(()=>setShowModal2(false),["Shift","N"])}
+      
         <AudioPlayer />
       </Modal>
       <audio id="myaudio" autoPlay loop >

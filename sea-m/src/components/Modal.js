@@ -1,6 +1,8 @@
 import React from 'react'
 
 import Close from 'img/Logout-button.png'
+import { useMultipleKeyPress } from 'Shortcutkey';
+
 
 const Modal = ({ isVisible, onClose, children }) => {
     if ( !isVisible ) return null;
@@ -8,8 +10,8 @@ const Modal = ({ isVisible, onClose, children }) => {
     const handleClose = () => {
         if( e.target.id === 'wrapper') onClose();
     }
-
     return (
+        
         <div id="wrapper" onClick={handleClose}>
             <div className="flex justify-center m-16"> 
                 <div className="flex flex-col bg-amber-50 w-96">
