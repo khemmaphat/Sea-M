@@ -1,13 +1,14 @@
 import React from 'react'
 
+import{ useOnKeyPress } from '../Shortcutkey'
 const AudioPlayer = () => {
 
-    function Iframe(props) {        
+    function Iframe(props) {
         return (<div dangerouslySetInnerHTML={ {__html:  props.iframe?props.iframe:""}} />);
     }
-
+    
     let iframe = '<iframe  id="spotify" src="https://open.spotify.com/embed/playlist/7Bg9W2mPUH4dkwhddHDvFK?utm_source=generator" allowfullscreen="allowfullscreen" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="border-radius: 12px;" width="100%" height="80" frameborder="0"></iframe>';
-
+    
     function changePlaylist(e) {
         const id = e.currentTarget.id
         console.log(id);

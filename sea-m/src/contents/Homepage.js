@@ -12,6 +12,7 @@ import CatAbout from 'img/Cat-About-Us.png'
 import AudioPlayer from 'components/AudioPlayer';
 import Modal from 'components/Modal';
 
+import { useMultipleKeyPress,useOnKeyPress } from '../Shortcutkey';
 //import background audio
 import wave from 'audio/sea-wave.mp3';
 
@@ -76,6 +77,10 @@ export default function Homepage() {
         </div>
       </Modal>
       <Modal isVisible={showModal2}  onClose={() => setShowModal2(false)}>
+
+      {useMultipleKeyPress(()=>setShowModal2(true),["Shift","M"])}
+      {useMultipleKeyPress(()=>setShowModal2(false),["Shift","C"])}
+ 
         <AudioPlayer />
       </Modal>
       <audio id="myaudio" autoPlay loop >
@@ -86,3 +91,4 @@ export default function Homepage() {
     </div>
   )
 }
+

@@ -11,6 +11,7 @@ import { setClientToken } from 'contents/spotify';
 
 
 function App() {
+  
 
   const [token, setToken] = useState("");
 
@@ -35,7 +36,6 @@ function App() {
       <Routes>
         <Route path="/"
           element={<Homepage />} />
-          
       </Routes>
     </Router>
   );

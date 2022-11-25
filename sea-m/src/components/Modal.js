@@ -2,6 +2,8 @@ import React from 'react'
 
 import Close from 'img/Logout-button.png'
 
+import { useMultipleKeyPress } from 'Shortcutkey';
+
 const Modal = ({ isVisible, onClose, children }) => {
     if ( !isVisible ) return null;
 
