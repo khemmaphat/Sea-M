@@ -35,22 +35,22 @@ export default function Homepage() {
       <div className="fixed left-5 top-5">
         <div className="flex space-x-4">
           <img className="flex-none w-72 h-36" src={logoName}/>
-          <button aria-label="MusicButton" onClick={() => setShowModal2(true)}>
+          <button  tabindex="1" aria-label="MusicButton" onClick={() => setShowModal2(true)}>
             <img   className="hover:scale-110 flex-auto h-[5.5rem]"  alt="MusicButton" src={MusicButton}/>
           </button>
         </div>
       </div>
       <div className="fixed left-5 bottom-5">
         <div className="flex space-x-4">
-            <button aria-label="about us" onClick={() => setShowModal(true)}>
+            <button  tabindex="1" aria-label="about us" onClick={() => setShowModal(true)}>
               <img  className="hover:scale-110 flex-none w-40 h-20" alt="About Us button" src={AboutUs}/>
             </button>
           <a tabindex="-1"href='https://github.com/khemmaphat/Sea-M.git' target="_blank">
-            <button tabindex="0" aria-label="Git-hub  button" ><img   className="hover:scale-110 flex-auto w-12 h-12 mt-6"src={Github}/></button>
+            <button tabindex="1" aria-label="Git-hub  button" ><img   className="hover:scale-110 flex-auto w-12 h-12 mt-6"src={Github}/></button>
           </a>
         </div>
         <div>
-          <button aria-label="log out button"onClick={logout} >
+          <button  tabindex="1" aria-label="log out button"onClick={logout} >
             <img  className="hover:scale-110 fixed right-5 top-5 w-12 h-12 "  alt="Logout"  src={Logout}/>
           </button>
         </div>
