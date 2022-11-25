@@ -46,21 +46,21 @@ export default function Homepage() {
               <img className="hover:scale-110 flex-none w-40 h-20" src={AboutUs}/>
             </button>
           <a href='https://github.com/khemmaphat/Sea-M.git' target="_blank">
-          {useMultipleKeyPress(()=>window.open('https://github.com/khemmaphat/Sea-M.git',"_self"),["Shift","V"])}
+          {useMultipleKeyPress(()=>window.open('https://github.com/khemmaphat/Sea-M.git',"_self"),["Shift","G"])}
             <button><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
           </a>
         </div>
         <div>
           <button onClick={logout}>
-          {useMultipleKeyPress(()=>logout(),["Shift","A"])}
+          {useMultipleKeyPress(()=>logout(),["Shift","O"])}
             <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout}/>
           </button>
         </div>
       </div>
       
       <Modal isVisible={showModal}  onClose={() => setShowModal(false)}>
-        {useMultipleKeyPress(()=>setShowModal(true),["Shift","K"])}
-        {useMultipleKeyPress(()=>setShowModal(false),["Shift","J"])}
+        {useMultipleKeyPress(()=>setShowModal(true),["Shift","A"])}
+        {useMultipleKeyPress(()=>setShowModal(false),["Shift","C"])}
         <div className="z-30 flex flex-col m-2">
           <img className="w-36 m-auto" src={CatAbout} />
           <div className="m-auto text-2xl font-bold">We are CPE 34 student</div>
@@ -81,8 +81,8 @@ export default function Homepage() {
         </div>
       </Modal>
       <Modal isVisible={showModal2}  onClose={() => setShowModal2(false)}>
-      {useMultipleKeyPress(()=>setShowModal2(true),["Shift","O"])}
-      {useMultipleKeyPress(()=>setShowModal2(false),["Shift","N"])}
+      {useMultipleKeyPress(()=>setShowModal2(true),["Shift","M"])}
+      {useMultipleKeyPress(()=>setShowModal2(false),["Shift","C"])}
       
         <AudioPlayer />
       </Modal>
