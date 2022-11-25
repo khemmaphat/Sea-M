@@ -1,4 +1,5 @@
 import React from 'react'
+
 import{ useOnKeyPress } from '../Shortcutkey'
 const AudioPlayer = () => {
 
@@ -11,7 +12,6 @@ const AudioPlayer = () => {
     function changePlaylist(e) {
         const id = e.currentTarget.id
         console.log(id);
-        
         if (id == "1") {
             document.getElementById("spotify").src = "https://open.spotify.com/embed/playlist/1dp2ehS1LG04Us5laRRIJO?utm_source=generator";
         } else if (id == "2") {
@@ -20,19 +20,16 @@ const AudioPlayer = () => {
             document.getElementById("spotify").src = "https://open.spotify.com/embed/album/4y9hzfVTHY7lHGpzqgiI4a?utm_source=generator";
         }
     };
-    
-    
-    
+
     return (
-       
         <div className="z-40 flex flex-col ">
-            <div className="text-2xl ml-2"> Music</div>
+            <div  tabindex="0"className="text-2xl ml-2"> Music</div>
             <div className="m-2"><Iframe iframe={iframe} /></div>
-            <div className="text-xl ml-2">Playlists</div>
+            <div tabindex="0"className="text-xl ml-2">Playlists</div>
             <div className="mx-2">
-                <p id="1" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Morning beat</p>
-                <p id="2" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Afternoon vibes</p>
-                <p id="3" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Evening chill</p>
+                <p  tabindex="0" id="1" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Morning beat</p>
+                <p  tabindex="0" id="2" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Afternoon vibes</p>
+                <p  tabindex="0" id="3" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Evening chill</p>
             </div>
         </div>
     )
