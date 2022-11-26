@@ -11,7 +11,6 @@ const AudioPlayer = () => {
     function changePlaylist(e) {
         const id = e.currentTarget.id
         console.log(id);
-        
         if (id == "1") {
             document.getElementById("spotify").src = "https://open.spotify.com/embed/playlist/1dp2ehS1LG04Us5laRRIJO?utm_source=generator";
         } else if (id == "2") {
@@ -21,10 +20,7 @@ const AudioPlayer = () => {
         }
     };
     
-    
-    
     return (
-       
         <div className="z-40 flex flex-col ">
             <div className="text-2xl ml-2"> Music</div>
             <div className="m-2"><Iframe iframe={iframe} /></div>

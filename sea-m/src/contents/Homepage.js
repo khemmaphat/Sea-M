@@ -11,20 +11,23 @@ import CatAbout from 'img/Cat-About-Us.png'
 //import components
 import AudioPlayer from 'components/AudioPlayer';
 import Modal from 'components/Modal';
+
 import { useMultipleKeyPress,useOnKeyPress } from '../Shortcutkey';
 //import background audio
 import wave from 'audio/sea-wave.mp3';
-
 
 export default function Homepage() {
 
   const [showModal, setShowModal] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
 
+  {/* logout function */}
   function logout(){
     window.localStorage.removeItem("token");
     window.location.reload(false);
   }
+
+  {/* hook for reducing audio volume */}
   useEffect (() => {
     const myaudio = document.getElementById("myaudio");
     myaudio.volume = 0.05;
@@ -52,12 +55,10 @@ export default function Homepage() {
         </div>
         <div>
           <button onClick={logout}>
-          {useMultipleKeyPress(()=>logout(),["Shift","A"])}
-            <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout}/>
+            <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout} id="logout-button"/>
           </button>
         </div>
       </div>
-      
       <Modal isVisible={showModal}  onClose={() => setShowModal(false)}>
         {useMultipleKeyPress(()=>setShowModal(true),["Shift","K"])}
         {useMultipleKeyPress(()=>setShowModal(false),["Shift","J"])}
@@ -83,9 +84,9 @@ export default function Homepage() {
       <Modal isVisible={showModal2}  onClose={() => setShowModal2(false)}>
       {useMultipleKeyPress(()=>setShowModal2(true),["Shift","O"])}
       {useMultipleKeyPress(()=>setShowModal2(false),["Shift","N"])}
-      
         <AudioPlayer />
       </Modal>
+      {/* audio player  */}
       <audio id="myaudio" autoPlay loop >
         <source src={wave} />
       </audio>
