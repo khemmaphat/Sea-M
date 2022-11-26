@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const AudioPlayer = () => {
 
@@ -20,10 +20,15 @@ const AudioPlayer = () => {
         }
     };
 
+    /*useEffect (() => {
+        const audio = document.getElementById("iframe");
+        audio.volume = 0.5;
+    }, []); */
+
     return (
         <div className="z-40 flex flex-col ">
             <div className="text-2xl ml-2"> Music</div>
-            <div className="m-2"><Iframe iframe={iframe} /></div>
+            <div className="m-2"><Iframe iframe={iframe} id="iframe" /></div>
             <div className="text-xl ml-2">Playlists</div>
             <div className="mx-2">
                 <p id="1" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Morning beat</p>

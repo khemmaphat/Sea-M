@@ -25,11 +25,6 @@ export default function Homepage() {
     window.location.reload(false);
   }
 
-  useEffect (() => {
-    const myaudio = document.getElementById("myaudio");
-    myaudio.volume = 0.05;
-  }, []);
-
   return (
     <div className="font-face-ds">
       <div className="fixed left-5 top-5">
