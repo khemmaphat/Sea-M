@@ -25,6 +25,11 @@ export default function Homepage() {
     window.location.reload(false);
   }
 
+  useEffect (() => {
+    const audio = document.getElementById("audio");
+    audio.volume = 0.05;
+  }, []);
+
   return (
     <div className="font-face-ds">
       <div className="fixed left-5 top-5">
@@ -73,7 +78,7 @@ export default function Homepage() {
       <Modal isVisible={showModal2}  onClose={() => setShowModal2(false)}>
         <AudioPlayer />
       </Modal>
-      <audio id="myaudio" autoPlay loop >
+      <audio id="audio" autoPlay loop >
         <source src={wave} />
       </audio>
     </div>
