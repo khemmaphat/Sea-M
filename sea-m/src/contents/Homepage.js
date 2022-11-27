@@ -73,10 +73,10 @@ export default function Homepage() {
             <h5 className="font-bold">Members</h5>
             <div className="ml-4">
               <p>1. Khemmaphat 1008</p>
-              <p>2. Natad 1xxx</p>
+              <p>2. Natad 1017</p>
               <p>3. Tayuth 1027</p>
-              <p>4. Thanaphat 1xxx</p>
-              <p>5. Thanwa 1xxx</p>
+              <p>4. Thanaphat 1030</p>
+              <p>5. Thanwa 1095</p>
             </div>
           </div>
         </div>
