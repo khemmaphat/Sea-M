@@ -17,10 +17,10 @@ export default function login() {
           <div className="text-lg ml-2 text-gray-500">
             <p tabindex="0">This website is part of the CPE327 Software Engineering Project.</p>
           </div>
-
+        {/* shortcut key for login button */}
         {useMultipleKeyPress(()=>window.open(loginEndpoint,"_self"),["Shift","E"])}
+        {/* login button */}
         <a href={loginEndpoint} id="login-button" role="button" ><div className="login-btn bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 mt-2 rounded-full inline-flex items-center text-center">Log-in</div></a>
-   
      </div>
     </div>
   )
