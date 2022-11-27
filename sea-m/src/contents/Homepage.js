@@ -39,7 +39,7 @@ export default function Homepage() {
         <div className="flex space-x-4">
           <img className="flex-none w-72 h-36" src={logoName}/>
           <button onClick={() => setShowModal2(true)}>
-            <img className="hover:scale-110 flex-auto h-[5.5rem]" src={MusicButton}/>
+            <img className="hover:scale-110 flex-auto h-[5.5rem]" src={MusicButton} id="music-box" />
           </button>
         </div>
       </div>
