@@ -29,8 +29,8 @@ export default function Homepage() {
 
   {/* hook for reducing audio volume */}
   useEffect (() => {
-    const myaudio = document.getElementById("myaudio");
-    myaudio.volume = 0.05;
+    const audio = document.getElementById("audio");
+    audio.volume = 0.05;
   }, []);
 
   return (
