@@ -38,30 +38,30 @@ export default function Homepage() {
       <div className="fixed left-5 top-5">
         <div className="flex space-x-4">
           <img className="flex-none w-72 h-36" src={logoName}/>
-          <button   tabIndex="1" aria-label="MusicButton"  onClick={() => setShowModal2(true)}>
+          <button   tabIndex="1" aria-label="Music Button Please press Shift M to choose playlist"  onClick={() => setShowModal2(true)}>
             <img className="hover:scale-110 flex-auto h-[5.5rem]" src={MusicButton} id="music-box" />
           </button>
         </div>
       </div>
       <div className="fixed left-5 bottom-5">
         <div className="flex space-x-4">
-            <button  tabIndex="1" aria-label="about us" onClick={() => setShowModal(true)}>
+            <button  tabIndex="1" aria-label="About us Button Please press Shift A" onClick={() => setShowModal(true)}>
               <img className="hover:scale-110 flex-none w-40 h-20" src={AboutUs} id="about-us" />
             </button>
           <a  tabIndex="-1" href='https://github.com/khemmaphat/Sea-M.git' target="_blank" id="github">
-          {useMultipleKeyPress(()=>window.open('https://github.com/khemmaphat/Sea-M.git',"_blank"),["Shift","V"])}
-            <button><img  tabIndex="1" aria-label="Git-hub  button" className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
+          {useMultipleKeyPress(()=>window.open('https://github.com/khemmaphat/Sea-M.git',"_blank"),["Shift","G"])}
+            <button tabIndex="1" aria-label="Git-hub Button Please press Shift G" ><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
           </a>
         </div>
         <div>
-          <button tabIndex="1" aria-label="log out button" onClick={logout}>
+          <button tabIndex="1" aria-label="Log out Button Please press Shift O" onClick={logout}>
             <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout} id="logout-button"/>
           </button>
         </div>
       </div>
       <Modal isVisible={showModal}  onClose={() => setShowModal(false)}>
-        {useMultipleKeyPress(()=>setShowModal(true),["Shift","K"])}
-        {useMultipleKeyPress(()=>setShowModal(false),["Shift","J"])}
+        {useMultipleKeyPress(()=>setShowModal(true),["Shift","A"])}
+        {useMultipleKeyPress(()=>setShowModal(false),["Shift","C"])}
         <div className="z-30 flex flex-col m-2">
           <img className="w-36 m-auto" src={CatAbout}/>
           <div className="m-auto text-2xl font-bold"tabIndex="0">We are CPE 34 student</div>
@@ -77,13 +77,14 @@ export default function Homepage() {
               <p tabIndex="0" >3. Tayuth 1027</p>
               <p tabIndex="0" >4. Thanaphat 1030</p>
               <p tabIndex="0" >5. Thanwa 1095</p>
+
             </div>
           </div>
         </div>
       </Modal>
       <Modal isVisible={showModal2}  onClose={() => setShowModal2(false)}>
-      {useMultipleKeyPress(()=>setShowModal2(true),["Shift","O"])}
-      {useMultipleKeyPress(()=>setShowModal2(false),["Shift","N"])}
+      {useMultipleKeyPress(()=>setShowModal2(true),["Shift","M"])}
+      {useMultipleKeyPress(()=>setShowModal2(false),["Shift","C"])}
         <AudioPlayer />
       </Modal>
       {/* audio player  */}
