@@ -45,16 +45,16 @@ export default function Homepage() {
       </div>
       <div className="fixed left-5 bottom-5">
         <div className="flex space-x-4">
-            <button  tabIndex="1" aria-label="About us Button Please press Shift A" onClick={() => setShowModal(true)}>
+            <button  tabIndex="3" aria-label="About us Button Please press Shift A" onClick={() => setShowModal(true)}>
               <img className="hover:scale-110 flex-none w-40 h-20" src={AboutUs} id="about-us" />
             </button>
           <a  tabIndex="-1" href='https://github.com/khemmaphat/Sea-M.git' target="_blank" id="github">
           {useMultipleKeyPress(()=>window.open('https://github.com/khemmaphat/Sea-M.git',"_blank"),["Shift","G"])}
-            <button tabIndex="1" aria-label="Git-hub Button Please press Shift G" ><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
+            <button tabIndex="5" aria-label="Git-hub Button Please press Shift G" ><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
           </a>
         </div>
         <div>
-          <button tabIndex="1" aria-label="Log out Button Please press Shift O" onClick={logout}>
+          <button tabIndex="6" aria-label="Log out Button Please press Shift O" onClick={logout}>
             <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout} id="logout-button"/>
           </button>
         </div>
@@ -64,19 +64,19 @@ export default function Homepage() {
         {useMultipleKeyPress(()=>setShowModal(false),["Shift","C"])}
         <div className="z-30 flex flex-col m-2">
           <img className="w-36 m-auto" src={CatAbout}/>
-          <div className="m-auto text-2xl font-bold"tabIndex="0">We are CPE 34 student</div>
-          <div className="text-base tracking-wide"><p tabIndex="0">
+          <div className="m-auto text-2xl font-bold"tabIndex="4">We are CPE 34 student</div>
+          <div className="text-base tracking-wide"><p tabIndex="4">
           This website is part of the CPE327 course. It is a music website
           that makes it more accessible for the visually impaired.<br/><br/>
           </p></div>
           <div>
-              <h5 tabIndex="0"  className="font-bold">Members</h5>
+              <h5 tabIndex="4"  className="font-bold">Members</h5>
             <div className="ml-4">
-           <p tabIndex="0" >1. Khemmaphat 1008</p>
-              <p tabIndex="0" >2. Natad 1xxx</p>
-              <p tabIndex="0" >3. Tayuth 1027</p>
-              <p tabIndex="0" >4. Thanaphat 1030</p>
-              <p tabIndex="0" >5. Thanwa 1xxx</p>
+           <p tabIndex="4" >1. Khemmaphat 1008</p>
+              <p tabIndex="4" >2. Natad 1xxx</p>
+              <p tabIndex="4" >3. Tayuth 1027</p>
+              <p tabIndex="4" >4. Thanaphat 1030</p>
+              <p tabIndex="4" >5. Thanwa 1xxx</p>
             </div>
           </div>
         </div>
