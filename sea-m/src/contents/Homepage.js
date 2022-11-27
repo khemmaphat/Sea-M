@@ -46,10 +46,10 @@ export default function Homepage() {
       <div className="fixed left-5 bottom-5">
         <div className="flex space-x-4">
             <button onClick={() => setShowModal(true)}>
-              <img className="hover:scale-110 flex-none w-40 h-20" src={AboutUs}/>
+              <img className="hover:scale-110 flex-none w-40 h-20" src={AboutUs} id="about-us" />
             </button>
-          <a href='https://github.com/khemmaphat/Sea-M.git' target="_blank">
-          {useMultipleKeyPress(()=>window.open('https://github.com/khemmaphat/Sea-M.git',"_self"),["Shift","V"])}
+          <a href='https://github.com/khemmaphat/Sea-M.git' target="_blank" id="github">
+          {useMultipleKeyPress(()=>window.open('https://github.com/khemmaphat/Sea-M.git',"_blank"),["Shift","V"])}
             <button><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
           </a>
         </div>
@@ -63,7 +63,7 @@ export default function Homepage() {
         {useMultipleKeyPress(()=>setShowModal(true),["Shift","K"])}
         {useMultipleKeyPress(()=>setShowModal(false),["Shift","J"])}
         <div className="z-30 flex flex-col m-2">
-          <img className="w-36 m-auto" src={CatAbout} />
+          <img className="w-36 m-auto" src={CatAbout}/>
           <div className="m-auto text-2xl font-bold">We are CPE 34 student</div>
           <div className="text-base tracking-wide"><p>
           This website is part of the CPE327 course. It is a music website
