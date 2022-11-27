@@ -87,7 +87,7 @@ export default function Homepage() {
         <AudioPlayer />
       </Modal>
       {/* audio player  */}
-      <audio id="myaudio" autoPlay loop >
+      <audio id="audio" autoPlay loop >
         <source src={wave} />
       </audio>
     <script src="Text.js" async></script>
