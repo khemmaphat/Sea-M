@@ -7,6 +7,7 @@ import AboutUs from 'img/About_Us_Button.png'
 import Github from 'img/GitHub-Button.png'
 import Logout from 'img/Logout-button.png'
 import CatAbout from 'img/Cat-About-Us.png'
+import Maingif from 'img/Homepage.gif'
 
 //import components
 import AudioPlayer from 'components/AudioPlayer';
@@ -34,32 +35,40 @@ export default function Homepage() {
   }, []);
 
   return (
-    <div className="font-face-ds" aria-label="Log in Suscess!">
-      <div>
-        <button tabIndex="1" aria-label="Log in Success! If you want to Log out Please press Shift O" onClick={logout} id="logout-button">
-          <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout} />
-        </button>
-      </div>
-      <div className="fixed left-5 bottom-5">
+    <div className="font-face-ds">
+      <div className="fixed left-5 top-5">
         <div className="flex space-x-4">
-          <a tabIndex="-1" href='https://github.com/khemmaphat/Sea-M.git' target="_blank" id="github">
-            {useMultipleKeyPress(() => window.open('https://github.com/khemmaphat/Sea-M.git', "_blank"), ["Shift", "G"])}
-            <button tabIndex="2" aria-label="Git-hub Button Please press Shift G" id="git-button" ><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
-          </a>
-          <button tabIndex="3" aria-label="About us Button Please press Shift A and Shift C to close" onClick={() => setShowModal(true)} id="ab-button">
-            <img className="hover:scale-110 flex-none w-40 h-20" src={AboutUs} id="about-us" />
+          <img className="flex-none w-72 h-36" src={logoName}/>
+          <button   tabIndex="1" aria-label="Music Button Please press Shift M to choose playlist"  onClick={() => setShowModal2(true)}>
+            <img className="hover:scale-110 flex-auto h-[5.5rem]" src={MusicButton} id="music-box" />
           </button>
         </div>
       </div>
-      <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-        {useMultipleKeyPress(() => setShowModal(true), ["Shift", "A"])}
-        {useMultipleKeyPress(() => setShowModal(false), ["Shift", "C"])}
+      <div className="fixed left-5 bottom-5">
+        <div className="flex space-x-4">
+            <button  tabIndex="3" aria-label="About us Button Please press Shift A" onClick={() => setShowModal(true)}>
+              <img className="hover:scale-110 flex-none w-40 h-20" src={AboutUs} id="about-us" />
+            </button>
+          <a  tabIndex="-1" href='https://github.com/khemmaphat/Sea-M.git' target="_blank" id="github">
+          {useMultipleKeyPress(()=>window.open('https://github.com/khemmaphat/Sea-M.git',"_blank"),["Shift","G"])}
+            <button tabIndex="5" aria-label="Git-hub Button Please press Shift G" ><img className="hover:scale-110 flex-auto w-12 h-12 mt-6" src={Github}/></button>
+          </a>
+        </div>
+        <div>
+          <button tabIndex="6" aria-label="Log out Button Please press Shift O" onClick={logout}>
+            <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout} id="logout-button"/>
+          </button>
+        </div>
+      </div>
+      <Modal isVisible={showModal}  onClose={() => setShowModal(false)}>
+        {useMultipleKeyPress(()=>setShowModal(true),["Shift","A"])}
+        {useMultipleKeyPress(()=>setShowModal(false),["Shift","C"])}
         <div className="z-30 flex flex-col m-2">
-          <img className="w-36 m-auto" src={CatAbout} />
-          <div className="m-auto text-2xl font-bold" tabIndex="3" id="ab1">We are CPE 34 student</div>
-          <div className="text-base tracking-wide"><p tabIndex="3" id="ab2">
-            This website is part of the CPE327 course. It is a music website
-            that makes it more accessible for the visually impaired.<br /><br />
+          <img className="w-36 m-auto" src={CatAbout}/>
+          <div className="m-auto text-2xl font-bold"tabIndex="4">We are CPE 34 student</div>
+          <div className="text-base tracking-wide"><p tabIndex="4">
+          This website is part of the CPE327 course. It is a music website
+          that makes it more accessible for the visually impaired.<br/><br/>
           </p></div>
           <div>
             <h5 tabIndex="3" className="font-bold" id="ab3">Members</h5>
@@ -90,7 +99,7 @@ export default function Homepage() {
       <audio id="audio" autoPlay loop >
         <source src={wave} />
       </audio>
-      <script src="Text.js" async></script>
+    <script src="Text.js" async></script>
     </div>
   )
 }
