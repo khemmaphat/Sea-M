@@ -6,7 +6,7 @@ ${HOST}                 localhost
 ${PORT}                 3000
 ${BROWSER}              chrome
 ${SERVER}               http://${HOST}:${PORT}
-${DELAY}                1
+${DELAY}                0
 ${username_text}        31kezuu765f6kappx6tnvoja57iy
 ${password_text}        07112544
 
