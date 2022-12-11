@@ -91,6 +91,7 @@ export default function Homepage() {
       <audio id="audio" autoPlay loop >
         <source src={wave} />
       </audio>
+      <img className="w-[48%] m-auto" src={Maingif} />
       <script src="Text.js" async></script>
     </div>
   )
