@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-//import picture for homepage
+//import pictures for homepage
 import logoName from 'img/Logo-name.png'
 import MusicButton from 'img/Music-Button.png'
 import AboutUs from 'img/About_Us_Button.png'
