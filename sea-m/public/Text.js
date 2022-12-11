@@ -3,7 +3,6 @@ let voices = speechSynthesis.getVoices();
 msg.voice = voices[0];
 
 let tags = document.querySelectorAll("div,a,button,h5,p"); 
- 
 
 tags.forEach((tag) => {
     tag.addEventListener('focusin', (e) => {

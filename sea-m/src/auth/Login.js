@@ -2,20 +2,19 @@ import React from 'react'
 import { loginEndpoint } from 'contents/spotify'
 import{ useMultipleKeyPress } from '../Shortcutkey'
 
-
 export default function login() {
   return (
     <div className="font-face-ds grid grid-cols-4">
       <div tabIndex="-1" className="col-start-2 col-end-4">
           <div className="text-4xl text-center">
-          <h1 tabIndex="0">You are the middle in the sea</h1>
+          <button tabIndex="0" id="h1" aria-label="You are the middle in the sea Please press the TAB to next and SHIFT TAB to previous">You are the middle in the sea</button>
           </div>
             <img tabIndex="-1" className="scale-75 mx-auto" alt="Boat" src="https://cdn.discordapp.com/attachments/1032286364315680818/1032286398159523870/unknown.png"/>
           <div className="text-2xl">
-            <h3 tabIndex="0">Login to sail to nearby island</h3>
+            <h3 tabIndex="0" id="h3">Login to sail to nearby island</h3>
           </div>
           <div className="text-lg ml-2 text-gray-500">
-            <p tabIndex="0">This website is part of the CPE327 Software Engineering Project.</p>
+            <p tabIndex="0" id="p">This website is part of the CPE327 Software Engineering Project.</p>
           </div>
         {/* shortcut key for login button */}
         {useMultipleKeyPress(()=>window.open(loginEndpoint,"_self"),["Shift","I"])}

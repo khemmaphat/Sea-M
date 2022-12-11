@@ -1,5 +1,4 @@
 import React from 'react'
-import{ useOnKeyPress } from '../Shortcutkey'
 
 const AudioPlayer = () => {
 
@@ -23,13 +22,13 @@ const AudioPlayer = () => {
 
     return (
         <div className="z-40 flex flex-col ">
-            <div className="text-2xl ml-2"> Music</div>
-            <div className="m-2"><Iframe iframe={iframe} id="iframe" /></div>
-            <div className="text-xl ml-2">Playlists</div>
+            <div tabIndex="5" className="text-2xl ml-2" id="ms1">Audio Player</div>
+            <div tabIndex="5" className="m-2" id="ms2"><Iframe iframe={iframe} id="iframe"/>Please Press TAB ENTER to play and press it again to pause</div>
+            <div tabIndex="0" className="text-xl ml-2" id="ms3">Playlists</div>
             <div className="mx-2">
-                <p id="1" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Morning beat</p>
-                <p id="2" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Afternoon vibes</p>
-                <p id="3" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Evening chill</p>
+                <button id="1" tabIndex="0" aria-label="Morning beat" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Morning beat</button><br></br>
+                <button id="2" tabIndex="0" aria-label="Afternoon vibes" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Afternoon vibes</button><br></br>
+                <button id="3" tabIndex="0" aria-label="Evening chill" className="text-sm text-gray-500 mx-3 hover:cursor-pointer" onClick={(e) => changePlaylist(e)}>Evening chill</button>
             </div>
         </div>
     )
