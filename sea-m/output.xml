@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20221211 15:18:24.317" rpa="false" schemaversion="3">
+<suite id="s1" name="Test Focus Voice" source="C:\Users\tayut\OneDrive\Desktop\Sea-M\Sea-M\sea-m\robot\test_focus_voice.robot">
+<test id="s1-t1" name="Check Focus&amp;Voice Login Page" line="30">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221211 15:18:24.880" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg timestamp="20221211 15:18:29.407" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221211 15:18:29.409" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.99 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00ED1ED3+2236115]
+	Ordinal0 [0x00E692F1+1807089]
+	Ordinal0 [0x00D766FD+812797]
+	Ordinal0 [0x00D98C6D+953453]
+	Ordinal0 [0x00D94200+934400]
+	Ordinal0 [0x00D919C9+924105]
+	Ordinal0 [0x00DC806C+1146988]
+	Ordinal0 [0x00DC7A6A+1145450]
+	Ordinal0 [0x00DC18A6+1120422]
+	Ordinal0 [0x00D9A73D+960317]
+	Ordinal0 [0x00D9B71F+964383]
+	GetHandleVerifier [0x0117E7E2+2743074]
+	GetHandleVerifier [0x011708D4+2685972]
+	GetHandleVerifier [0x00F62BAA+532202]
+	GetHandleVerifier [0x00F61990+527568]
+	Ordinal0 [0x00E7080C+1837068]
+	Ordinal0 [0x00E74CD8+1854680]
+	Ordinal0 [0x00E74DC5+1854917]
+	Ordinal0 [0x00E7ED64+1895780]
+	BaseThreadInitThunk [0x7623FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B8E+238]
+</msg>
+<status status="FAIL" starttime="20221211 15:18:24.873" endtime="20221211 15:18:29.501"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.502" endtime="20221211 15:18:29.502"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.502" endtime="20221211 15:18:29.502"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Sea-M</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.502" endtime="20221211 15:18:29.502"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:24.871" endtime="20221211 15:18:29.503"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.504" endtime="20221211 15:18:29.504"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:h1</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.504" endtime="20221211 15:18:29.504"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.505" endtime="20221211 15:18:29.505"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:h3</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.505" endtime="20221211 15:18:29.505"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.505" endtime="20221211 15:18:29.505"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:p</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.506" endtime="20221211 15:18:29.506"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.506" endtime="20221211 15:18:29.506"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.507" endtime="20221211 15:18:29.507"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:24.869" endtime="20221211 15:18:29.508">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.99 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00ED1ED3+2236115]
+	Ordinal0 [0x00E692F1+1807089]
+	Ordinal0 [0x00D766FD+812797]
+	Ordinal0 [0x00D98C6D+953453]
+	Ordinal0 [0x00D94200+934400]
+	Ordinal0 [0x00D919C9+924105]
+	Ordinal0 [0x00DC806C+1146988]
+	Ordinal0 [0x00DC7A6A+1145450]
+	Ordinal0 [0x00DC18A6+1120422]
+	Ordinal0 [0x00D9A73D+960317]
+	Ordinal0 [0x00D9B71F+964383]
+	GetHandleVerifier [0x0117E7E2+2743074]
+	GetHandleVerifier [0x011708D4+2685972]
+	GetHandleVerifier [0x00F62BAA+532202]
+	GetHandleVerifier [0x00F61990+527568]
+	Ordinal0 [0x00E7080C+1837068]
+	Ordinal0 [0x00E74CD8+1854680]
+	Ordinal0 [0x00E74DC5+1854917]
+	Ordinal0 [0x00E7ED64+1895780]
+	BaseThreadInitThunk [0x7623FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B8E+238]
+</status>
+</test>
+<test id="s1-t2" name="Check Focus&amp;Voice Logout Homepage" line="41">
+<kw name="Login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 15:18:29.519" level="INFO">Clicking element 'id:login-button'.</msg>
+<msg timestamp="20221211 15:18:29.520" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221211 15:18:29.521" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20221211 15:18:29.518" endtime="20221211 15:18:29.577"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<arg>${username_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.578" endtime="20221211 15:18:29.578"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password_text}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.578" endtime="20221211 15:18:29.579"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.579" endtime="20221211 15:18:29.579"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.579" endtime="20221211 15:18:29.579"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.579" endtime="20221211 15:18:29.579"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:29.518" endtime="20221211 15:18:29.582"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.583" endtime="20221211 15:18:29.583"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.584" endtime="20221211 15:18:29.584"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.585" endtime="20221211 15:18:29.585"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:29.516" endtime="20221211 15:18:29.586">No browser is open.</status>
+</test>
+<test id="s1-t3" name="Check Focus&amp;Voice Git Homepage" line="47">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221211 15:18:29.589" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 15:18:29.589" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221211 15:18:29.590" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20221211 15:18:29.589" endtime="20221211 15:18:29.590"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:git-button</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.591" endtime="20221211 15:18:29.591"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:29.587" endtime="20221211 15:18:29.591">No browser is open.</status>
+</test>
+<test id="s1-t4" name="Check Focus&amp;Voice AboutUs Homepage" line="51">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221211 15:18:29.598" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 15:18:29.598" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221211 15:18:29.598" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20221211 15:18:29.596" endtime="20221211 15:18:29.599"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ab-button</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.600" endtime="20221211 15:18:29.600"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.600" endtime="20221211 15:18:29.600"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.601" endtime="20221211 15:18:29.601"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ab1</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.601" endtime="20221211 15:18:29.601"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.602" endtime="20221211 15:18:29.602"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ab2</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.603" endtime="20221211 15:18:29.603"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.603" endtime="20221211 15:18:29.603"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ab3</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.604" endtime="20221211 15:18:29.604"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.604" endtime="20221211 15:18:29.604"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ab4</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.605" endtime="20221211 15:18:29.605"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.605" endtime="20221211 15:18:29.606"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ab5</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.606" endtime="20221211 15:18:29.606"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.606" endtime="20221211 15:18:29.606"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ab6</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.607" endtime="20221211 15:18:29.607"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.607" endtime="20221211 15:18:29.607"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ab7</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.607" endtime="20221211 15:18:29.608"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.608" endtime="20221211 15:18:29.608"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ab8</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.608" endtime="20221211 15:18:29.609"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>SHIFT+C</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.609" endtime="20221211 15:18:29.609"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:29.593" endtime="20221211 15:18:29.611">No browser is open.</status>
+</test>
+<test id="s1-t5" name="Check Focus&amp;Voice Music Homepage" line="73">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221211 15:18:29.619" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 15:18:29.619" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221211 15:18:29.619" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20221211 15:18:29.618" endtime="20221211 15:18:29.620"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ms</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.620" endtime="20221211 15:18:29.620"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.621" endtime="20221211 15:18:29.621"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>id:spotify</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.622" endtime="20221211 15:18:29.622"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.622" endtime="20221211 15:18:29.622"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ms1</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.622" endtime="20221211 15:18:29.622"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.623" endtime="20221211 15:18:29.623"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:ms2</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.623" endtime="20221211 15:18:29.623"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:ms3</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.624" endtime="20221211 15:18:29.624"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.624" endtime="20221211 15:18:29.624"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:1</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.624" endtime="20221211 15:18:29.625"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.625" endtime="20221211 15:18:29.625"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:2</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.625" endtime="20221211 15:18:29.626"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.627" endtime="20221211 15:18:29.627"/>
+</kw>
+<kw name="Element Should Be Focused" library="SeleniumLibrary">
+<arg>id:3</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.628" endtime="20221211 15:18:29.628"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>SHIFT+C</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:29.628" endtime="20221211 15:18:29.628"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:29.616" endtime="20221211 15:18:29.630">No browser is open.</status>
+</test>
+<test id="s1-t6" name="Test Music-Playlist" line="91">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221211 15:18:29.636" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg timestamp="20221211 15:18:33.542" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221211 15:18:33.543" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.99 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00ED1ED3+2236115]
+	Ordinal0 [0x00E692F1+1807089]
+	Ordinal0 [0x00D766FD+812797]
+	Ordinal0 [0x00D98C6D+953453]
+	Ordinal0 [0x00D94200+934400]
+	Ordinal0 [0x00D919C9+924105]
+	Ordinal0 [0x00DC806C+1146988]
+	Ordinal0 [0x00DC7A6A+1145450]
+	Ordinal0 [0x00DC18A6+1120422]
+	Ordinal0 [0x00D9A73D+960317]
+	Ordinal0 [0x00D9B71F+964383]
+	GetHandleVerifier [0x0117E7E2+2743074]
+	GetHandleVerifier [0x011708D4+2685972]
+	GetHandleVerifier [0x00F62BAA+532202]
+	GetHandleVerifier [0x00F61990+527568]
+	Ordinal0 [0x00E7080C+1837068]
+	Ordinal0 [0x00E74CD8+1854680]
+	Ordinal0 [0x00E74DC5+1854917]
+	Ordinal0 [0x00E7ED64+1895780]
+	BaseThreadInitThunk [0x7623FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B8E+238]
+</msg>
+<status status="FAIL" starttime="20221211 15:18:29.635" endtime="20221211 15:18:33.543"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.544" endtime="20221211 15:18:33.544"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<arg>${username_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.545" endtime="20221211 15:18:33.545"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password_text}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.545" endtime="20221211 15:18:33.545"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.546" endtime="20221211 15:18:33.546"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.546" endtime="20221211 15:18:33.546"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.547" endtime="20221211 15:18:33.547"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.547" endtime="20221211 15:18:33.547"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:music-box</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.548" endtime="20221211 15:18:33.548"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:close-modal</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.549" endtime="20221211 15:18:33.549"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.549" endtime="20221211 15:18:33.549"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.550" endtime="20221211 15:18:33.550"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.550" endtime="20221211 15:18:33.550"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.551" endtime="20221211 15:18:33.551"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:3</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.551" endtime="20221211 15:18:33.551"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.552" endtime="20221211 15:18:33.553"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:close-modal</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.553" endtime="20221211 15:18:33.553"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.554" endtime="20221211 15:18:33.554"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:33.554" endtime="20221211 15:18:33.554"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:29.633" endtime="20221211 15:18:33.555">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.99 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00ED1ED3+2236115]
+	Ordinal0 [0x00E692F1+1807089]
+	Ordinal0 [0x00D766FD+812797]
+	Ordinal0 [0x00D98C6D+953453]
+	Ordinal0 [0x00D94200+934400]
+	Ordinal0 [0x00D919C9+924105]
+	Ordinal0 [0x00DC806C+1146988]
+	Ordinal0 [0x00DC7A6A+1145450]
+	Ordinal0 [0x00DC18A6+1120422]
+	Ordinal0 [0x00D9A73D+960317]
+	Ordinal0 [0x00D9B71F+964383]
+	GetHandleVerifier [0x0117E7E2+2743074]
+	GetHandleVerifier [0x011708D4+2685972]
+	GetHandleVerifier [0x00F62BAA+532202]
+	GetHandleVerifier [0x00F61990+527568]
+	Ordinal0 [0x00E7080C+1837068]
+	Ordinal0 [0x00E74CD8+1854680]
+	Ordinal0 [0x00E74DC5+1854917]
+	Ordinal0 [0x00E7ED64+1895780]
+	BaseThreadInitThunk [0x7623FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B8E+238]
+</status>
+</test>
+<test id="s1-t7" name="Test About-us" line="112">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221211 15:18:33.564" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg timestamp="20221211 15:18:37.363" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221211 15:18:37.363" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.99 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00ED1ED3+2236115]
+	Ordinal0 [0x00E692F1+1807089]
+	Ordinal0 [0x00D766FD+812797]
+	Ordinal0 [0x00D98C6D+953453]
+	Ordinal0 [0x00D94200+934400]
+	Ordinal0 [0x00D919C9+924105]
+	Ordinal0 [0x00DC806C+1146988]
+	Ordinal0 [0x00DC7A6A+1145450]
+	Ordinal0 [0x00DC18A6+1120422]
+	Ordinal0 [0x00D9A73D+960317]
+	Ordinal0 [0x00D9B71F+964383]
+	GetHandleVerifier [0x0117E7E2+2743074]
+	GetHandleVerifier [0x011708D4+2685972]
+	GetHandleVerifier [0x00F62BAA+532202]
+	GetHandleVerifier [0x00F61990+527568]
+	Ordinal0 [0x00E7080C+1837068]
+	Ordinal0 [0x00E74CD8+1854680]
+	Ordinal0 [0x00E74DC5+1854917]
+	Ordinal0 [0x00E7ED64+1895780]
+	BaseThreadInitThunk [0x7623FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B8E+238]
+</msg>
+<status status="FAIL" starttime="20221211 15:18:33.563" endtime="20221211 15:18:37.364"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.364" endtime="20221211 15:18:37.365"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<arg>${username_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.365" endtime="20221211 15:18:37.365"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password_text}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.365" endtime="20221211 15:18:37.365"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.366" endtime="20221211 15:18:37.366"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.366" endtime="20221211 15:18:37.366"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.367" endtime="20221211 15:18:37.367"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.367" endtime="20221211 15:18:37.367"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:about-us</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.368" endtime="20221211 15:18:37.368"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="wrapper"]/div/div/div/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.368" endtime="20221211 15:18:37.368"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:close-modal</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.368" endtime="20221211 15:18:37.368"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:37.369" endtime="20221211 15:18:37.369"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:33.562" endtime="20221211 15:18:37.370">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.99 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00ED1ED3+2236115]
+	Ordinal0 [0x00E692F1+1807089]
+	Ordinal0 [0x00D766FD+812797]
+	Ordinal0 [0x00D98C6D+953453]
+	Ordinal0 [0x00D94200+934400]
+	Ordinal0 [0x00D919C9+924105]
+	Ordinal0 [0x00DC806C+1146988]
+	Ordinal0 [0x00DC7A6A+1145450]
+	Ordinal0 [0x00DC18A6+1120422]
+	Ordinal0 [0x00D9A73D+960317]
+	Ordinal0 [0x00D9B71F+964383]
+	GetHandleVerifier [0x0117E7E2+2743074]
+	GetHandleVerifier [0x011708D4+2685972]
+	GetHandleVerifier [0x00F62BAA+532202]
+	GetHandleVerifier [0x00F61990+527568]
+	Ordinal0 [0x00E7080C+1837068]
+	Ordinal0 [0x00E74CD8+1854680]
+	Ordinal0 [0x00E74DC5+1854917]
+	Ordinal0 [0x00E7ED64+1895780]
+	BaseThreadInitThunk [0x7623FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B8E+238]
+</status>
+</test>
+<test id="s1-t8" name="Test github" line="126">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221211 15:18:37.377" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg timestamp="20221211 15:18:41.256" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221211 15:18:41.256" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.99 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00ED1ED3+2236115]
+	Ordinal0 [0x00E692F1+1807089]
+	Ordinal0 [0x00D766FD+812797]
+	Ordinal0 [0x00D98C6D+953453]
+	Ordinal0 [0x00D94200+934400]
+	Ordinal0 [0x00D919C9+924105]
+	Ordinal0 [0x00DC806C+1146988]
+	Ordinal0 [0x00DC7A6A+1145450]
+	Ordinal0 [0x00DC18A6+1120422]
+	Ordinal0 [0x00D9A73D+960317]
+	Ordinal0 [0x00D9B71F+964383]
+	GetHandleVerifier [0x0117E7E2+2743074]
+	GetHandleVerifier [0x011708D4+2685972]
+	GetHandleVerifier [0x00F62BAA+532202]
+	GetHandleVerifier [0x00F61990+527568]
+	Ordinal0 [0x00E7080C+1837068]
+	Ordinal0 [0x00E74CD8+1854680]
+	Ordinal0 [0x00E74DC5+1854917]
+	Ordinal0 [0x00E7ED64+1895780]
+	BaseThreadInitThunk [0x7623FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B8E+238]
+</msg>
+<status status="FAIL" starttime="20221211 15:18:37.377" endtime="20221211 15:18:41.257"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:41.258" endtime="20221211 15:18:41.258"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<arg>${username_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:41.259" endtime="20221211 15:18:41.259"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password_text}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:41.260" endtime="20221211 15:18:41.260"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:41.260" endtime="20221211 15:18:41.260"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:41.261" endtime="20221211 15:18:41.261"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:41.261" endtime="20221211 15:18:41.261"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:41.261" endtime="20221211 15:18:41.262"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:github</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:41.262" endtime="20221211 15:18:41.262"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:41.263" endtime="20221211 15:18:41.263"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:41.263" endtime="20221211 15:18:41.263"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:37.376" endtime="20221211 15:18:41.264">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.99 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00ED1ED3+2236115]
+	Ordinal0 [0x00E692F1+1807089]
+	Ordinal0 [0x00D766FD+812797]
+	Ordinal0 [0x00D98C6D+953453]
+	Ordinal0 [0x00D94200+934400]
+	Ordinal0 [0x00D919C9+924105]
+	Ordinal0 [0x00DC806C+1146988]
+	Ordinal0 [0x00DC7A6A+1145450]
+	Ordinal0 [0x00DC18A6+1120422]
+	Ordinal0 [0x00D9A73D+960317]
+	Ordinal0 [0x00D9B71F+964383]
+	GetHandleVerifier [0x0117E7E2+2743074]
+	GetHandleVerifier [0x011708D4+2685972]
+	GetHandleVerifier [0x00F62BAA+532202]
+	GetHandleVerifier [0x00F61990+527568]
+	Ordinal0 [0x00E7080C+1837068]
+	Ordinal0 [0x00E74CD8+1854680]
+	Ordinal0 [0x00E74DC5+1854917]
+	Ordinal0 [0x00E7ED64+1895780]
+	BaseThreadInitThunk [0x7623FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B8E+238]
+</status>
+</test>
+<test id="s1-t9" name="Test All-shortcut-keys" line="139">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221211 15:18:41.274" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg timestamp="20221211 15:18:45.079" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221211 15:18:45.079" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.99 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00ED1ED3+2236115]
+	Ordinal0 [0x00E692F1+1807089]
+	Ordinal0 [0x00D766FD+812797]
+	Ordinal0 [0x00D98C6D+953453]
+	Ordinal0 [0x00D94200+934400]
+	Ordinal0 [0x00D919C9+924105]
+	Ordinal0 [0x00DC806C+1146988]
+	Ordinal0 [0x00DC7A6A+1145450]
+	Ordinal0 [0x00DC18A6+1120422]
+	Ordinal0 [0x00D9A73D+960317]
+	Ordinal0 [0x00D9B71F+964383]
+	GetHandleVerifier [0x0117E7E2+2743074]
+	GetHandleVerifier [0x011708D4+2685972]
+	GetHandleVerifier [0x00F62BAA+532202]
+	GetHandleVerifier [0x00F61990+527568]
+	Ordinal0 [0x00E7080C+1837068]
+	Ordinal0 [0x00E74CD8+1854680]
+	Ordinal0 [0x00E74DC5+1854917]
+	Ordinal0 [0x00E7ED64+1895780]
+	BaseThreadInitThunk [0x7623FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B8E+238]
+</msg>
+<status status="FAIL" starttime="20221211 15:18:41.273" endtime="20221211 15:18:45.081"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<arg>SHIFT+I</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.082" endtime="20221211 15:18:45.082"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.083" endtime="20221211 15:18:45.083"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<arg>${username_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.083" endtime="20221211 15:18:45.083"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password_text}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.083" endtime="20221211 15:18:45.083"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.084" endtime="20221211 15:18:45.084"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.084" endtime="20221211 15:18:45.084"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.085" endtime="20221211 15:18:45.085"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:music-box</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.085" endtime="20221211 15:18:45.085"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:music-box</arg>
+<arg>SHIFT+O</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.086" endtime="20221211 15:18:45.086"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:music-box</arg>
+<arg>SHIFT+N</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.086" endtime="20221211 15:18:45.086"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:about-us</arg>
+<arg>SHIFT+K</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.087" endtime="20221211 15:18:45.087"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:about-us</arg>
+<arg>SHIFT+J</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.087" endtime="20221211 15:18:45.088"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:github</arg>
+<arg>SHIFT+V</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.088" endtime="20221211 15:18:45.088"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.089" endtime="20221211 15:18:45.089"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221211 15:18:45.089" endtime="20221211 15:18:45.089"/>
+</kw>
+<status status="FAIL" starttime="20221211 15:18:41.271" endtime="20221211 15:18:45.090">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.99 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00ED1ED3+2236115]
+	Ordinal0 [0x00E692F1+1807089]
+	Ordinal0 [0x00D766FD+812797]
+	Ordinal0 [0x00D98C6D+953453]
+	Ordinal0 [0x00D94200+934400]
+	Ordinal0 [0x00D919C9+924105]
+	Ordinal0 [0x00DC806C+1146988]
+	Ordinal0 [0x00DC7A6A+1145450]
+	Ordinal0 [0x00DC18A6+1120422]
+	Ordinal0 [0x00D9A73D+960317]
+	Ordinal0 [0x00D9B71F+964383]
+	GetHandleVerifier [0x0117E7E2+2743074]
+	GetHandleVerifier [0x011708D4+2685972]
+	GetHandleVerifier [0x00F62BAA+532202]
+	GetHandleVerifier [0x00F61990+527568]
+	Ordinal0 [0x00E7080C+1837068]
+	Ordinal0 [0x00E74CD8+1854680]
+	Ordinal0 [0x00E74DC5+1854917]
+	Ordinal0 [0x00E7ED64+1895780]
+	BaseThreadInitThunk [0x7623FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B8E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20221211 15:18:24.323" endtime="20221211 15:18:45.099"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="9" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="9" skip="0" id="s1" name="Test Focus Voice">Test Focus Voice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
