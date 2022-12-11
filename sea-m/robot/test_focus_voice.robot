@@ -95,6 +95,7 @@ Check Focus&Voice Music Homepage
     Press Keys    None    TAB
     Element Should Be Focused    id:3
     Press Keys    None    SHIFT+C
+    Close Browser
 
 Test Music-Playlist
     Open Browser To Login Page
@@ -104,12 +105,20 @@ Test Music-Playlist
     Wait Until Element Is Visible    id:close-modal
     Click Element    id:1
     Sleep     5s
+    Select Frame     id:spotify
+    Current Frame Should Contain            Morning Music
+    Unselect Frame
     Click Element    id:2
     Sleep     5s
+    Select Frame     id:spotify
+    Current Frame Should Contain          RELAX CHILLOUT MUSIC, Relaxing Music, Study Music, Lofi, Ambient Music, Chill Music,Background Music
+    Unselect Frame
     Click Element    id:3
     Sleep     5s
+    Select Frame     id:spotify
+    Current Frame Should Contain          This is Chill out - Sunset Beach Chill out Playlist
+    Unselect Frame
     Click Element    id:close-modal
-    Click Element    id:logout-button
     Close Browser
 
 Test About-us
@@ -138,5 +147,4 @@ Test All-shortcut-keys
     Press Keys    id:about-us    SHIFT+K
     Press Keys    id:about-us    SHIFT+J
     Press Keys    id:github    SHIFT+V
-    Click Element    id:logout-button
     Close Browser
