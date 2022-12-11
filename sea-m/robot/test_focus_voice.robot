@@ -25,6 +25,14 @@ Login
     Wait Until Element Is Visible    //*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
     Click Element    xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
     
+Login with Shortcutkey
+    Press Keys    id:login-button    SHIFT+I
+    Wait Until Element Is Visible    id:login-username
+    Input Text     id:login-username     ${username_text} 
+    Input Password     id:login-password     ${password_text}
+    Click Element    id:login-button
+    Wait Until Element Is Visible    //*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
+    Click Element    xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
 
 *** Test Cases ***
 Check Focus&Voice Login Page
@@ -89,13 +97,8 @@ Check Focus&Voice Music Homepage
     Press Keys    None    SHIFT+C
 
 Test Music-Playlist
-    Open Browser    ${SERVER}    ${BROWSER}
-    Click Element    id:login-button
-    Input Text     id:login-username     ${username_text} 
-    Input Password     id:login-password     ${password_text}
-    Click Element    id:login-button
-    Wait Until Element Is Visible    //*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
-    Click Element    xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
+    Open Browser To Login Page
+    Login
     Wait Until Element Is Visible    id:logout-button
     Click Element    id:music-box
     Wait Until Element Is Visible    id:close-modal
@@ -110,13 +113,8 @@ Test Music-Playlist
     Close Browser
 
 Test About-us
-    Open Browser    ${SERVER}    ${BROWSER}
-    Click Element    id:login-button
-    Input Text     id:login-username     ${username_text} 
-    Input Password     id:login-password     ${password_text}
-    Click Element    id:login-button
-    Wait Until Element Is Visible    //*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
-    Click Element    xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
+    Open Browser To Login Page
+    Login
     Wait Until Element Is Visible    id:logout-button
     Click Element    id:about-us
     Wait Until Element Is Visible    //*[@id="wrapper"]/div/div/div/div[1]
@@ -124,27 +122,16 @@ Test About-us
     Close Browser
 
 Test github
-    Open Browser    ${SERVER}    ${BROWSER}
-    Click Element    id:login-button
-    Input Text     id:login-username     ${username_text} 
-    Input Password     id:login-password     ${password_text}
-    Click Element    id:login-button
-    Wait Until Element Is Visible    //*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
-    Click Element    xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
+    Open Browser To Login Page
+    Login
     Wait Until Element Is Visible    id:logout-button
     Click Element    id:github
     sleep    5s
     Close Browser
 
 Test All-shortcut-keys
-    Open Browser    ${SERVER}    ${BROWSER}
-    Press Keys    id:login-button    SHIFT+I
-    Wait Until Element Is Visible    id:login-username
-    Input Text     id:login-username     ${username_text} 
-    Input Password     id:login-password     ${password_text}
-    Click Element    id:login-button
-    Wait Until Element Is Visible    //*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
-    Click Element    xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
+    Open Browser To Login Page
+    Login with Shortcutkey
     Wait Until Element Is Visible    id:music-box
     Press Keys    id:music-box    SHIFT+O
     Press Keys    id:music-box    SHIFT+N

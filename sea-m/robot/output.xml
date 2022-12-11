@@ -1,729 +1,614 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.9 on win32)" generated="20221211 15:40:58.388" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.9 on win32)" generated="20221211 20:01:24.930" rpa="false" schemaversion="3">
 <suite id="s1" name="Test Focus Voice" source="C:\CPE327-project\sea-m\robot\test_focus_voice.robot">
-<test id="s1-t1" name="Check Focus&amp;Voice Login Page" line="30">
+<test id="s1-t1" name="Check Focus&amp;Voice Login Page" line="38">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${SERVER}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221211 15:40:58.622" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
-<status status="PASS" starttime="20221211 15:40:58.622" endtime="20221211 15:41:00.979"/>
+<msg timestamp="20221211 20:01:25.099" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20221211 20:01:25.099" endtime="20221211 20:01:28.182"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<msg timestamp="20221211 15:41:00.983" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<msg timestamp="20221211 15:41:00.987" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<status status="FAIL" starttime="20221211 15:41:00.980" endtime="20221211 15:41:01.002"/>
+<status status="PASS" starttime="20221211 20:01:28.182" endtime="20221211 20:01:28.317"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>${DELAY}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.003" endtime="20221211 15:41:01.003"/>
+<status status="PASS" starttime="20221211 20:01:28.317" endtime="20221211 20:01:28.318"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Sea-M</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.003" endtime="20221211 15:41:01.003"/>
+<msg timestamp="20221211 20:01:28.322" level="INFO">Page title is 'Sea-M'.</msg>
+<status status="PASS" starttime="20221211 20:01:28.318" endtime="20221211 20:01:28.322"/>
 </kw>
-<status status="FAIL" starttime="20221211 15:40:58.621" endtime="20221211 15:41:01.004"/>
+<status status="PASS" starttime="20221211 20:01:25.098" endtime="20221211 20:01:28.323"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.005" endtime="20221211 15:41:01.005"/>
+<msg timestamp="20221211 20:01:28.324" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:28.324" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:28.324" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:28.323" endtime="20221211 20:01:28.335"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:h1</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.005" endtime="20221211 15:41:01.006"/>
+<status status="PASS" starttime="20221211 20:01:28.336" endtime="20221211 20:01:28.348"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.006" endtime="20221211 15:41:01.006"/>
+<msg timestamp="20221211 20:01:28.349" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:28.349" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:28.349" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:28.348" endtime="20221211 20:01:28.356"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:h3</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.007" endtime="20221211 15:41:01.008"/>
+<status status="PASS" starttime="20221211 20:01:28.357" endtime="20221211 20:01:28.367"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.008" endtime="20221211 15:41:01.009"/>
+<msg timestamp="20221211 20:01:28.368" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:28.368" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:28.368" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:28.367" endtime="20221211 20:01:28.373"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:p</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.010" endtime="20221211 15:41:01.010"/>
+<status status="PASS" starttime="20221211 20:01:28.373" endtime="20221211 20:01:28.385"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.011" endtime="20221211 15:41:01.011"/>
+<msg timestamp="20221211 20:01:28.386" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:28.386" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:28.386" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:28.386" endtime="20221211 20:01:28.413"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.012" endtime="20221211 15:41:01.012"/>
+<status status="PASS" starttime="20221211 20:01:28.414" endtime="20221211 20:01:28.425"/>
 </kw>
-<status status="FAIL" starttime="20221211 15:40:58.620" endtime="20221211 15:41:01.013">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</status>
+<status status="PASS" starttime="20221211 20:01:25.098" endtime="20221211 20:01:28.425"/>
 </test>
-<test id="s1-t2" name="Check Focus&amp;Voice Logout Homepage" line="41">
+<test id="s1-t2" name="Check Focus&amp;Voice Logout Homepage" line="49">
 <kw name="Login">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221211 15:41:01.023" level="INFO">Clicking element 'id:login-button'.</msg>
-<msg timestamp="20221211 15:41:01.030" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<msg timestamp="20221211 15:41:01.041" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<status status="FAIL" starttime="20221211 15:41:01.022" endtime="20221211 15:41:01.044"/>
+<msg timestamp="20221211 20:01:28.427" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221211 20:01:28.427" endtime="20221211 20:01:30.532"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:login-username</arg>
 <arg>${username_text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.044" endtime="20221211 15:41:01.045"/>
+<msg timestamp="20221211 20:01:30.533" level="INFO">Typing text '31kezuu765f6kappx6tnvoja57iy' into text field 'id:login-username'.</msg>
+<status status="PASS" starttime="20221211 20:01:30.533" endtime="20221211 20:01:30.727"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>id:login-password</arg>
 <arg>${password_text}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.045" endtime="20221211 15:41:01.045"/>
+<msg timestamp="20221211 20:01:30.728" level="INFO">Typing password into text field 'id:login-password'.</msg>
+<msg timestamp="20221211 20:01:30.758" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221211 20:01:30.824" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221211 20:01:30.727" endtime="20221211 20:01:30.824"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.045" endtime="20221211 15:41:01.045"/>
+<msg timestamp="20221211 20:01:30.825" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221211 20:01:30.824" endtime="20221211 20:01:30.862"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.045" endtime="20221211 15:41:01.045"/>
+<status status="PASS" starttime="20221211 20:01:30.862" endtime="20221211 20:01:32.386"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.045" endtime="20221211 15:41:01.045"/>
+<msg timestamp="20221211 20:01:32.387" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]'.</msg>
+<status status="PASS" starttime="20221211 20:01:32.386" endtime="20221211 20:01:32.424"/>
 </kw>
-<status status="FAIL" starttime="20221211 15:41:01.021" endtime="20221211 15:41:01.046"/>
+<status status="PASS" starttime="20221211 20:01:28.427" endtime="20221211 20:01:32.424"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:logout-button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.047" endtime="20221211 15:41:01.047"/>
+<status status="PASS" starttime="20221211 20:01:32.424" endtime="20221211 20:01:33.024"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.047" endtime="20221211 15:41:01.047"/>
+<msg timestamp="20221211 20:01:33.025" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.025" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.025" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.024" endtime="20221211 20:01:33.036"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:logout-button</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.050" endtime="20221211 15:41:01.051"/>
+<status status="PASS" starttime="20221211 20:01:33.037" endtime="20221211 20:01:33.045"/>
 </kw>
-<status status="FAIL" starttime="20221211 15:41:01.020" endtime="20221211 15:41:01.069">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</status>
+<status status="PASS" starttime="20221211 20:01:28.426" endtime="20221211 20:01:33.045"/>
 </test>
-<test id="s1-t3" name="Check Focus&amp;Voice Git Homepage" line="47">
+<test id="s1-t3" name="Check Focus&amp;Voice Git Homepage" line="55">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20221211 15:41:01.122" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20221211 15:41:01.123" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20221211 15:41:01.123" level="INFO">Releasing special key TAB.</msg>
-<msg timestamp="20221211 15:41:01.129" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<msg timestamp="20221211 15:41:01.135" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<status status="FAIL" starttime="20221211 15:41:01.121" endtime="20221211 15:41:01.168"/>
+<msg timestamp="20221211 20:01:33.047" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.048" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.048" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.047" endtime="20221211 20:01:33.053"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:git-button</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.169" endtime="20221211 15:41:01.169"/>
+<status status="PASS" starttime="20221211 20:01:33.054" endtime="20221211 20:01:33.067"/>
 </kw>
-<status status="FAIL" starttime="20221211 15:41:01.115" endtime="20221211 15:41:01.170">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</status>
+<status status="PASS" starttime="20221211 20:01:33.046" endtime="20221211 20:01:33.068"/>
 </test>
-<test id="s1-t4" name="Check Focus&amp;Voice AboutUs Homepage" line="51">
+<test id="s1-t4" name="Check Focus&amp;Voice AboutUs Homepage" line="59">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20221211 15:41:01.178" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20221211 15:41:01.179" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20221211 15:41:01.179" level="INFO">Releasing special key TAB.</msg>
-<msg timestamp="20221211 15:41:01.183" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<msg timestamp="20221211 15:41:01.188" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<status status="FAIL" starttime="20221211 15:41:01.177" endtime="20221211 15:41:01.189"/>
+<msg timestamp="20221211 20:01:33.070" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.070" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.070" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.069" endtime="20221211 20:01:33.099"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ab-button</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.190" endtime="20221211 15:41:01.190"/>
+<status status="PASS" starttime="20221211 20:01:33.100" endtime="20221211 20:01:33.111"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.191" endtime="20221211 15:41:01.191"/>
+<msg timestamp="20221211 20:01:33.112" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg timestamp="20221211 20:01:33.112" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg timestamp="20221211 20:01:33.112" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20221211 20:01:33.112" endtime="20221211 20:01:33.129"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.191" endtime="20221211 15:41:01.192"/>
+<msg timestamp="20221211 20:01:33.130" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.130" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.130" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.130" endtime="20221211 20:01:33.169"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ab1</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.192" endtime="20221211 15:41:01.192"/>
+<status status="PASS" starttime="20221211 20:01:33.170" endtime="20221211 20:01:33.189"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.193" endtime="20221211 15:41:01.193"/>
+<msg timestamp="20221211 20:01:33.191" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.192" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.192" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.190" endtime="20221211 20:01:33.222"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ab2</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.193" endtime="20221211 15:41:01.193"/>
+<status status="PASS" starttime="20221211 20:01:33.223" endtime="20221211 20:01:33.243"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.194" endtime="20221211 15:41:01.194"/>
+<msg timestamp="20221211 20:01:33.244" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.244" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.244" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.244" endtime="20221211 20:01:33.263"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ab3</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.195" endtime="20221211 15:41:01.195"/>
+<status status="PASS" starttime="20221211 20:01:33.264" endtime="20221211 20:01:33.285"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.196" endtime="20221211 15:41:01.196"/>
+<msg timestamp="20221211 20:01:33.287" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.287" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.287" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.286" endtime="20221211 20:01:33.306"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ab4</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.197" endtime="20221211 15:41:01.197"/>
+<status status="PASS" starttime="20221211 20:01:33.306" endtime="20221211 20:01:33.322"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.199" endtime="20221211 15:41:01.199"/>
+<msg timestamp="20221211 20:01:33.323" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.323" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.323" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.322" endtime="20221211 20:01:33.330"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ab5</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.199" endtime="20221211 15:41:01.199"/>
+<status status="PASS" starttime="20221211 20:01:33.330" endtime="20221211 20:01:33.348"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.200" endtime="20221211 15:41:01.201"/>
+<msg timestamp="20221211 20:01:33.349" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.349" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.349" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.348" endtime="20221211 20:01:33.376"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ab6</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.201" endtime="20221211 15:41:01.201"/>
+<status status="PASS" starttime="20221211 20:01:33.376" endtime="20221211 20:01:33.389"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.202" endtime="20221211 15:41:01.202"/>
+<msg timestamp="20221211 20:01:33.390" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.390" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.390" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.389" endtime="20221211 20:01:33.394"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ab7</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.203" endtime="20221211 15:41:01.203"/>
+<status status="PASS" starttime="20221211 20:01:33.395" endtime="20221211 20:01:33.406"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.204" endtime="20221211 15:41:01.204"/>
+<msg timestamp="20221211 20:01:33.407" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.407" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.407" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.406" endtime="20221211 20:01:33.439"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ab8</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.204" endtime="20221211 15:41:01.204"/>
+<status status="PASS" starttime="20221211 20:01:33.439" endtime="20221211 20:01:33.452"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>SHIFT+C</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.205" endtime="20221211 15:41:01.205"/>
+<msg timestamp="20221211 20:01:33.453" level="INFO">Sending key(s) ('SHIFT+C',) to page.</msg>
+<msg timestamp="20221211 20:01:33.453" level="INFO">Pressing special key SHIFT down.</msg>
+<msg timestamp="20221211 20:01:33.453" level="INFO">Sending key C</msg>
+<msg timestamp="20221211 20:01:33.453" level="INFO">Releasing special key SHIFT.</msg>
+<status status="PASS" starttime="20221211 20:01:33.453" endtime="20221211 20:01:33.462"/>
 </kw>
-<status status="FAIL" starttime="20221211 15:41:01.176" endtime="20221211 15:41:01.206">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</status>
+<status status="PASS" starttime="20221211 20:01:33.069" endtime="20221211 20:01:33.463"/>
 </test>
-<test id="s1-t5" name="Check Focus&amp;Voice Music Homepage" line="73">
+<test id="s1-t5" name="Check Focus&amp;Voice Music Homepage" line="81">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20221211 15:41:01.216" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20221211 15:41:01.217" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20221211 15:41:01.217" level="INFO">Releasing special key TAB.</msg>
-<msg timestamp="20221211 15:41:01.220" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<msg timestamp="20221211 15:41:01.225" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<status status="FAIL" starttime="20221211 15:41:01.216" endtime="20221211 15:41:01.227"/>
+<msg timestamp="20221211 20:01:33.464" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.465" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.465" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.464" endtime="20221211 20:01:33.471"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ms</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.228" endtime="20221211 15:41:01.228"/>
+<status status="PASS" starttime="20221211 20:01:33.471" endtime="20221211 20:01:33.484"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.228" endtime="20221211 15:41:01.228"/>
+<msg timestamp="20221211 20:01:33.485" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg timestamp="20221211 20:01:33.485" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg timestamp="20221211 20:01:33.485" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20221211 20:01:33.484" endtime="20221211 20:01:33.519"/>
 </kw>
 <kw name="Element Should Be Enabled" library="SeleniumLibrary">
 <arg>id:spotify</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.229" endtime="20221211 15:41:01.229"/>
+<status status="PASS" starttime="20221211 20:01:33.520" endtime="20221211 20:01:33.550"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.230" endtime="20221211 15:41:01.230"/>
+<msg timestamp="20221211 20:01:33.551" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.551" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.551" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.551" endtime="20221211 20:01:33.562"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ms1</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.231" endtime="20221211 15:41:01.231"/>
+<status status="PASS" starttime="20221211 20:01:33.562" endtime="20221211 20:01:33.602"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.231" endtime="20221211 15:41:01.231"/>
+<msg timestamp="20221211 20:01:33.604" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.604" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.604" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.603" endtime="20221211 20:01:33.611"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:ms2</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.232" endtime="20221211 15:41:01.233"/>
+<status status="PASS" starttime="20221211 20:01:33.611" endtime="20221211 20:01:33.622"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:ms3</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.233" endtime="20221211 15:41:01.233"/>
+<msg timestamp="20221211 20:01:33.623" level="INFO">Clicking element 'id:ms3'.</msg>
+<status status="PASS" starttime="20221211 20:01:33.623" endtime="20221211 20:01:33.662"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.234" endtime="20221211 15:41:01.234"/>
+<msg timestamp="20221211 20:01:33.664" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.664" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.664" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.663" endtime="20221211 20:01:33.669"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:1</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.235" endtime="20221211 15:41:01.235"/>
+<status status="PASS" starttime="20221211 20:01:33.669" endtime="20221211 20:01:33.680"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.235" endtime="20221211 15:41:01.235"/>
+<msg timestamp="20221211 20:01:33.681" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.681" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.681" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.681" endtime="20221211 20:01:33.686"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:2</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.236" endtime="20221211 15:41:01.236"/>
+<status status="PASS" starttime="20221211 20:01:33.687" endtime="20221211 20:01:33.732"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.236" endtime="20221211 15:41:01.236"/>
+<msg timestamp="20221211 20:01:33.733" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20221211 20:01:33.733" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20221211 20:01:33.733" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20221211 20:01:33.733" endtime="20221211 20:01:33.739"/>
 </kw>
 <kw name="Element Should Be Focused" library="SeleniumLibrary">
 <arg>id:3</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.237" endtime="20221211 15:41:01.237"/>
+<status status="PASS" starttime="20221211 20:01:33.739" endtime="20221211 20:01:33.749"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>SHIFT+C</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20221211 15:41:01.237" endtime="20221211 15:41:01.237"/>
+<msg timestamp="20221211 20:01:33.750" level="INFO">Sending key(s) ('SHIFT+C',) to page.</msg>
+<msg timestamp="20221211 20:01:33.750" level="INFO">Pressing special key SHIFT down.</msg>
+<msg timestamp="20221211 20:01:33.750" level="INFO">Sending key C</msg>
+<msg timestamp="20221211 20:01:33.750" level="INFO">Releasing special key SHIFT.</msg>
+<status status="PASS" starttime="20221211 20:01:33.750" endtime="20221211 20:01:33.761"/>
 </kw>
-<status status="FAIL" starttime="20221211 15:41:01.213" endtime="20221211 15:41:01.238">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
+<status status="PASS" starttime="20221211 20:01:33.463" endtime="20221211 20:01:33.762"/>
+</test>
+<test id="s1-t6" name="Test Music-Playlist" line="99">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221211 20:01:33.764" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20221211 20:01:33.764" endtime="20221211 20:01:36.709"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221211 20:01:36.709" endtime="20221211 20:01:36.867"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221211 20:01:36.867" endtime="20221211 20:01:36.868"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Sea-M</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221211 20:01:36.872" level="INFO">Page title is 'Sea-M'.</msg>
+<status status="PASS" starttime="20221211 20:01:36.868" endtime="20221211 20:01:36.872"/>
+</kw>
+<status status="PASS" starttime="20221211 20:01:33.764" endtime="20221211 20:01:36.872"/>
+</kw>
+<kw name="Login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:36.873" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221211 20:01:36.873" endtime="20221211 20:01:38.954"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<arg>${username_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:38.955" level="INFO">Typing text '31kezuu765f6kappx6tnvoja57iy' into text field 'id:login-username'.</msg>
+<status status="PASS" starttime="20221211 20:01:38.955" endtime="20221211 20:01:39.156"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password_text}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:39.157" level="INFO">Typing password into text field 'id:login-password'.</msg>
+<msg timestamp="20221211 20:01:39.189" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221211 20:01:39.253" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221211 20:01:39.156" endtime="20221211 20:01:39.253"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:39.253" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221211 20:01:39.253" endtime="20221211 20:01:39.289"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:01:39.290" endtime="20221211 20:01:40.641"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:40.641" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]'.</msg>
+<status status="PASS" starttime="20221211 20:01:40.641" endtime="20221211 20:01:40.680"/>
+</kw>
+<status status="PASS" starttime="20221211 20:01:36.872" endtime="20221211 20:01:40.680"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:01:40.680" endtime="20221211 20:01:41.264"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:music-box</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:41.266" level="INFO">Clicking element 'id:music-box'.</msg>
+<status status="PASS" starttime="20221211 20:01:41.264" endtime="20221211 20:01:41.358"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:close-modal</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:01:41.358" endtime="20221211 20:01:41.392"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:41.393" level="INFO">Clicking element 'id:1'.</msg>
+<status status="PASS" starttime="20221211 20:01:41.393" endtime="20221211 20:01:41.472"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221211 20:01:46.481" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221211 20:01:41.473" endtime="20221211 20:01:46.481"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:46.482" level="INFO">Clicking element 'id:2'.</msg>
+<status status="PASS" starttime="20221211 20:01:46.481" endtime="20221211 20:01:46.524"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221211 20:01:51.538" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221211 20:01:46.524" endtime="20221211 20:01:51.538"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:3</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:51.539" level="INFO">Clicking element 'id:3'.</msg>
+<status status="PASS" starttime="20221211 20:01:51.539" endtime="20221211 20:01:51.578"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221211 20:01:56.583" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221211 20:01:51.579" endtime="20221211 20:01:56.583"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:close-modal</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:56.584" level="INFO">Clicking element 'id:close-modal'.</msg>
+<status status="PASS" starttime="20221211 20:01:56.583" endtime="20221211 20:01:56.639"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:01:56.641" level="INFO">Clicking element 'id:logout-button'.</msg>
+<msg timestamp="20221211 20:01:56.835" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221211 20:01:56.836" level="FAIL">ElementNotInteractableException: Message: element not interactable: element has zero size
   (Session info: chrome=108.0.5359.99)
 Stacktrace:
 Backtrace:
 	(No symbol) [0x0105F243]
 	(No symbol) [0x00FE7FD1]
 	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
+	(No symbol) [0x00F0D486]
+	(No symbol) [0x00F032A6]
+	(No symbol) [0x00F2858C]
+	(No symbol) [0x00F02BFF]
+	(No symbol) [0x00F28804]
+	(No symbol) [0x00F3C9EB]
+	(No symbol) [0x00F28386]
+	(No symbol) [0x00F0163C]
+	(No symbol) [0x00F0269D]
+	GetHandleVerifier [0x012F9A22+2655074]
+	GetHandleVerifier [0x012ECA24+2601828]
+	GetHandleVerifier [0x01108C0A+619850]
+	GetHandleVerifier [0x01107830+614768]
+	(No symbol) [0x00FF05FC]
+	(No symbol) [0x00FF5968]
+	(No symbol) [0x00FF5A55]
+	(No symbol) [0x0100051B]
+	BaseThreadInitThunk [0x76CDFEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
+</msg>
+<status status="FAIL" starttime="20221211 20:01:56.640" endtime="20221211 20:01:56.847"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221211 20:01:56.848" endtime="20221211 20:01:56.848"/>
+</kw>
+<status status="FAIL" starttime="20221211 20:01:33.763" endtime="20221211 20:01:56.848">ElementNotInteractableException: Message: element not interactable: element has zero size
+  (Session info: chrome=108.0.5359.99)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0105F243]
+	(No symbol) [0x00FE7FD1]
+	(No symbol) [0x00EDD04D]
+	(No symbol) [0x00F0D486]
+	(No symbol) [0x00F032A6]
+	(No symbol) [0x00F2858C]
+	(No symbol) [0x00F02BFF]
+	(No symbol) [0x00F28804]
+	(No symbol) [0x00F3C9EB]
 	(No symbol) [0x00F28386]
 	(No symbol) [0x00F0163C]
 	(No symbol) [0x00F0269D]
@@ -740,148 +625,405 @@ Backtrace:
 	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
 </status>
 </test>
-<status status="FAIL" starttime="20221211 15:40:58.391" endtime="20221211 15:41:01.244"/>
+<test id="s1-t7" name="Test About-us" line="115">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221211 20:01:56.854" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20221211 20:01:56.854" endtime="20221211 20:01:59.860"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221211 20:01:59.860" endtime="20221211 20:01:59.986"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221211 20:01:59.986" endtime="20221211 20:01:59.986"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Sea-M</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221211 20:02:00.020" level="INFO">Page title is 'Sea-M'.</msg>
+<status status="PASS" starttime="20221211 20:01:59.986" endtime="20221211 20:02:00.020"/>
+</kw>
+<status status="PASS" starttime="20221211 20:01:56.853" endtime="20221211 20:02:00.020"/>
+</kw>
+<kw name="Login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:00.021" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221211 20:02:00.021" endtime="20221211 20:02:02.227"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<arg>${username_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:02.227" level="INFO">Typing text '31kezuu765f6kappx6tnvoja57iy' into text field 'id:login-username'.</msg>
+<status status="PASS" starttime="20221211 20:02:02.227" endtime="20221211 20:02:02.431"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password_text}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:02.431" level="INFO">Typing password into text field 'id:login-password'.</msg>
+<msg timestamp="20221211 20:02:02.464" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221211 20:02:02.531" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221211 20:02:02.431" endtime="20221211 20:02:02.531"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:02.531" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221211 20:02:02.531" endtime="20221211 20:02:02.569"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:02:02.569" endtime="20221211 20:02:03.973"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:03.974" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]'.</msg>
+<status status="PASS" starttime="20221211 20:02:03.973" endtime="20221211 20:02:04.012"/>
+</kw>
+<status status="PASS" starttime="20221211 20:02:00.020" endtime="20221211 20:02:04.012"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:02:04.012" endtime="20221211 20:02:04.572"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:about-us</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:04.573" level="INFO">Clicking element 'id:about-us'.</msg>
+<status status="PASS" starttime="20221211 20:02:04.573" endtime="20221211 20:02:04.685"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="wrapper"]/div/div/div/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:02:04.686" endtime="20221211 20:02:04.708"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:close-modal</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:04.709" level="INFO">Clicking element 'id:close-modal'.</msg>
+<status status="PASS" starttime="20221211 20:02:04.709" endtime="20221211 20:02:04.773"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221211 20:02:04.774" endtime="20221211 20:02:06.851"/>
+</kw>
+<status status="PASS" starttime="20221211 20:01:56.853" endtime="20221211 20:02:06.851"/>
+</test>
+<test id="s1-t8" name="Test github" line="124">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221211 20:02:06.854" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20221211 20:02:06.854" endtime="20221211 20:02:09.854"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221211 20:02:09.854" endtime="20221211 20:02:10.010"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221211 20:02:10.010" endtime="20221211 20:02:10.011"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Sea-M</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221211 20:02:10.014" level="INFO">Page title is 'Sea-M'.</msg>
+<status status="PASS" starttime="20221211 20:02:10.011" endtime="20221211 20:02:10.014"/>
+</kw>
+<status status="PASS" starttime="20221211 20:02:06.854" endtime="20221211 20:02:10.015"/>
+</kw>
+<kw name="Login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:10.016" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221211 20:02:10.015" endtime="20221211 20:02:11.973"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<arg>${username_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:11.973" level="INFO">Typing text '31kezuu765f6kappx6tnvoja57iy' into text field 'id:login-username'.</msg>
+<status status="PASS" starttime="20221211 20:02:11.973" endtime="20221211 20:02:12.173"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password_text}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:12.173" level="INFO">Typing password into text field 'id:login-password'.</msg>
+<msg timestamp="20221211 20:02:12.205" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221211 20:02:12.276" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221211 20:02:12.173" endtime="20221211 20:02:12.276"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:12.277" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221211 20:02:12.277" endtime="20221211 20:02:12.314"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:02:12.314" endtime="20221211 20:02:13.394"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:13.394" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]'.</msg>
+<status status="PASS" starttime="20221211 20:02:13.394" endtime="20221211 20:02:13.433"/>
+</kw>
+<status status="PASS" starttime="20221211 20:02:10.015" endtime="20221211 20:02:13.433"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:02:13.434" endtime="20221211 20:02:14.014"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:github</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:14.015" level="INFO">Clicking element 'id:github'.</msg>
+<status status="PASS" starttime="20221211 20:02:14.015" endtime="20221211 20:02:14.126"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221211 20:02:19.136" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221211 20:02:14.127" endtime="20221211 20:02:19.136"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221211 20:02:19.136" endtime="20221211 20:02:21.228"/>
+</kw>
+<status status="PASS" starttime="20221211 20:02:06.853" endtime="20221211 20:02:21.229"/>
+</test>
+<test id="s1-t9" name="Test All-shortcut-keys" line="132">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221211 20:02:21.233" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20221211 20:02:21.232" endtime="20221211 20:02:24.151"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221211 20:02:24.151" endtime="20221211 20:02:24.287"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221211 20:02:24.287" endtime="20221211 20:02:24.288"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Sea-M</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221211 20:02:24.292" level="INFO">Page title is 'Sea-M'.</msg>
+<status status="PASS" starttime="20221211 20:02:24.288" endtime="20221211 20:02:24.292"/>
+</kw>
+<status status="PASS" starttime="20221211 20:02:21.232" endtime="20221211 20:02:24.293"/>
+</kw>
+<kw name="Login with Shortcutkey">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<arg>SHIFT+I</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221211 20:02:24.294" level="INFO">Sending key(s) ('SHIFT+I',) to id:login-button element.</msg>
+<msg timestamp="20221211 20:02:26.777" level="INFO">Pressing special key SHIFT down.</msg>
+<msg timestamp="20221211 20:02:26.777" level="INFO">Sending key I</msg>
+<msg timestamp="20221211 20:02:26.777" level="INFO">Releasing special key SHIFT.</msg>
+<status status="PASS" starttime="20221211 20:02:24.293" endtime="20221211 20:02:26.786"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:02:26.787" endtime="20221211 20:02:26.806"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login-username</arg>
+<arg>${username_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:26.806" level="INFO">Typing text '31kezuu765f6kappx6tnvoja57iy' into text field 'id:login-username'.</msg>
+<status status="PASS" starttime="20221211 20:02:26.806" endtime="20221211 20:02:27.017"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:login-password</arg>
+<arg>${password_text}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:27.017" level="INFO">Typing password into text field 'id:login-password'.</msg>
+<msg timestamp="20221211 20:02:27.048" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221211 20:02:27.113" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221211 20:02:27.017" endtime="20221211 20:02:27.113"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:27.113" level="INFO">Clicking element 'id:login-button'.</msg>
+<status status="PASS" starttime="20221211 20:02:27.113" endtime="20221211 20:02:27.151"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:02:27.151" endtime="20221211 20:02:28.379"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:28.380" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]'.</msg>
+<status status="PASS" starttime="20221211 20:02:28.379" endtime="20221211 20:02:28.418"/>
+</kw>
+<status status="PASS" starttime="20221211 20:02:24.293" endtime="20221211 20:02:28.419"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:music-box</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221211 20:02:28.419" endtime="20221211 20:02:28.954"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:music-box</arg>
+<arg>SHIFT+O</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221211 20:02:28.956" level="INFO">Sending key(s) ('SHIFT+O',) to id:music-box element.</msg>
+<msg timestamp="20221211 20:02:29.285" level="INFO">Pressing special key SHIFT down.</msg>
+<msg timestamp="20221211 20:02:29.285" level="INFO">Sending key O</msg>
+<msg timestamp="20221211 20:02:29.285" level="INFO">Releasing special key SHIFT.</msg>
+<status status="PASS" starttime="20221211 20:02:28.955" endtime="20221211 20:02:29.292"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:music-box</arg>
+<arg>SHIFT+N</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221211 20:02:29.293" level="INFO">Sending key(s) ('SHIFT+N',) to id:music-box element.</msg>
+<msg timestamp="20221211 20:02:29.567" level="INFO">Pressing special key SHIFT down.</msg>
+<msg timestamp="20221211 20:02:29.567" level="INFO">Sending key N</msg>
+<msg timestamp="20221211 20:02:29.567" level="INFO">Releasing special key SHIFT.</msg>
+<status status="PASS" starttime="20221211 20:02:29.293" endtime="20221211 20:02:29.579"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:about-us</arg>
+<arg>SHIFT+K</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221211 20:02:29.579" level="INFO">Sending key(s) ('SHIFT+K',) to id:about-us element.</msg>
+<msg timestamp="20221211 20:02:29.917" level="INFO">Pressing special key SHIFT down.</msg>
+<msg timestamp="20221211 20:02:29.917" level="INFO">Sending key K</msg>
+<msg timestamp="20221211 20:02:29.917" level="INFO">Releasing special key SHIFT.</msg>
+<status status="PASS" starttime="20221211 20:02:29.579" endtime="20221211 20:02:29.924"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:about-us</arg>
+<arg>SHIFT+J</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221211 20:02:29.925" level="INFO">Sending key(s) ('SHIFT+J',) to id:about-us element.</msg>
+<msg timestamp="20221211 20:02:30.250" level="INFO">Pressing special key SHIFT down.</msg>
+<msg timestamp="20221211 20:02:30.250" level="INFO">Sending key J</msg>
+<msg timestamp="20221211 20:02:30.251" level="INFO">Releasing special key SHIFT.</msg>
+<status status="PASS" starttime="20221211 20:02:29.925" endtime="20221211 20:02:30.259"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:github</arg>
+<arg>SHIFT+V</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221211 20:02:30.260" level="INFO">Sending key(s) ('SHIFT+V',) to id:github element.</msg>
+<msg timestamp="20221211 20:02:30.649" level="INFO">Pressing special key SHIFT down.</msg>
+<msg timestamp="20221211 20:02:30.649" level="INFO">Sending key V</msg>
+<msg timestamp="20221211 20:02:30.649" level="INFO">Releasing special key SHIFT.</msg>
+<status status="PASS" starttime="20221211 20:02:30.259" endtime="20221211 20:02:30.659"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:logout-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221211 20:02:30.660" level="INFO">Clicking element 'id:logout-button'.</msg>
+<msg timestamp="20221211 20:02:31.062" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221211 20:02:31.062" level="FAIL">ElementNotInteractableException: Message: element not interactable: element has zero size
+  (Session info: chrome=108.0.5359.99)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0105F243]
+	(No symbol) [0x00FE7FD1]
+	(No symbol) [0x00EDD04D]
+	(No symbol) [0x00F0D486]
+	(No symbol) [0x00F032A6]
+	(No symbol) [0x00F2858C]
+	(No symbol) [0x00F02BFF]
+	(No symbol) [0x00F28804]
+	(No symbol) [0x00F3C9EB]
+	(No symbol) [0x00F28386]
+	(No symbol) [0x00F0163C]
+	(No symbol) [0x00F0269D]
+	GetHandleVerifier [0x012F9A22+2655074]
+	GetHandleVerifier [0x012ECA24+2601828]
+	GetHandleVerifier [0x01108C0A+619850]
+	GetHandleVerifier [0x01107830+614768]
+	(No symbol) [0x00FF05FC]
+	(No symbol) [0x00FF5968]
+	(No symbol) [0x00FF5A55]
+	(No symbol) [0x0100051B]
+	BaseThreadInitThunk [0x76CDFEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
+</msg>
+<status status="FAIL" starttime="20221211 20:02:30.660" endtime="20221211 20:02:31.062"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221211 20:02:31.063" endtime="20221211 20:02:31.063"/>
+</kw>
+<status status="FAIL" starttime="20221211 20:02:21.231" endtime="20221211 20:02:31.064">ElementNotInteractableException: Message: element not interactable: element has zero size
+  (Session info: chrome=108.0.5359.99)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0105F243]
+	(No symbol) [0x00FE7FD1]
+	(No symbol) [0x00EDD04D]
+	(No symbol) [0x00F0D486]
+	(No symbol) [0x00F032A6]
+	(No symbol) [0x00F2858C]
+	(No symbol) [0x00F02BFF]
+	(No symbol) [0x00F28804]
+	(No symbol) [0x00F3C9EB]
+	(No symbol) [0x00F28386]
+	(No symbol) [0x00F0163C]
+	(No symbol) [0x00F0269D]
+	GetHandleVerifier [0x012F9A22+2655074]
+	GetHandleVerifier [0x012ECA24+2601828]
+	GetHandleVerifier [0x01108C0A+619850]
+	GetHandleVerifier [0x01107830+614768]
+	(No symbol) [0x00FF05FC]
+	(No symbol) [0x00FF5968]
+	(No symbol) [0x00FF5A55]
+	(No symbol) [0x0100051B]
+	BaseThreadInitThunk [0x76CDFEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20221211 20:01:24.932" endtime="20221211 20:02:31.067"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="5" skip="0">All Tests</stat>
+<stat pass="7" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="5" skip="0" id="s1" name="Test Focus Voice">Test Focus Voice</stat>
+<stat pass="7" fail="2" skip="0" id="s1" name="Test Focus Voice">Test Focus Voice</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221211 15:41:00.983" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<msg timestamp="20221211 15:41:01.030" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<msg timestamp="20221211 15:41:01.129" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<msg timestamp="20221211 15:41:01.183" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
-<msg timestamp="20221211 15:41:01.220" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.99)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0105F243]
-	(No symbol) [0x00FE7FD1]
-	(No symbol) [0x00EDD04D]
-	(No symbol) [0x00EC2D7A]
-	(No symbol) [0x00F2BE7B]
-	(No symbol) [0x00F3C196]
-	(No symbol) [0x00F28386]
-	(No symbol) [0x00F0163C]
-	(No symbol) [0x00F0269D]
-	GetHandleVerifier [0x012F9A22+2655074]
-	GetHandleVerifier [0x012ECA24+2601828]
-	GetHandleVerifier [0x01108C0A+619850]
-	GetHandleVerifier [0x01107830+614768]
-	(No symbol) [0x00FF05FC]
-	(No symbol) [0x00FF5968]
-	(No symbol) [0x00FF5A55]
-	(No symbol) [0x0100051B]
-	BaseThreadInitThunk [0x76CDFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77DC7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77DC7B8E+238]
-</msg>
 </errors>
 </robot>
