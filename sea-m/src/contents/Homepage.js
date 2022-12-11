@@ -13,7 +13,7 @@ import Maingif from 'img/Homepage.gif'
 import AudioPlayer from 'components/AudioPlayer';
 import Modal from 'components/Modal';
 
-import { useMultipleKeyPress, useOnKeyPress } from '../Shortcutkey';
+import { useMultipleKeyPress, useOnKeyPress } from 'components/Shortcutkey';
 //import background audio
 import wave from 'audio/sea-wave.mp3';
 
@@ -37,6 +37,7 @@ export default function Homepage() {
   return (
     <div className="font-face-ds">
       <div>
+        {useMultipleKeyPress(()=>logout(),["Shift","O"])}
         <button tabIndex="1" aria-label="Log in Success! If you want to Log out Please press Shift O" onClick={logout} id="logout-button" >
           <img className="hover:scale-110 fixed right-5 top-5 w-12 h-12 " src={Logout}/>
         </button>
