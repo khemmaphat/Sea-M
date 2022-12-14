@@ -1,13 +1,21 @@
 import React from 'react'
 
+
+/* 
+* The function is used to display a Playlist.
+* It is used for selecting songs and playing songs according to the set playlist.
+*/
 const AudioPlayer = () => {
 
+    // iframe for audio player
     function Iframe(props) {
         return (<div dangerouslySetInnerHTML={ {__html:  props.iframe?props.iframe:""}} />);
     }
     
+    // declare iframe variable 
     let iframe = '<iframe  id="spotify" src="https://open.spotify.com/embed/playlist/7Bg9W2mPUH4dkwhddHDvFK?utm_source=generator" allowfullscreen="allowfullscreen" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="border-radius: 12px;" width="100%" height="80" frameborder="0"></iframe>';
     
+    // function to change playlist
     function changePlaylist(e) {
         const id = e.currentTarget.id
         console.log(id);

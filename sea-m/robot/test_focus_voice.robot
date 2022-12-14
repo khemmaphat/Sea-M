@@ -35,6 +35,14 @@ Login with Shortcutkey
     Click Element    xpath://*[@id="root"]/div/div[2]/div/div/div[3]/button/div[1]
 
 *** Test Cases ***
+Login
+    Open Browser To Login Page
+    Login
+    Wait Until Element Is Visible    id:logout-button
+    Press Keys    id:logout-button    SHIFT+O
+    Wait Until Element Is Visible    id:h1
+    Close Browser
+
 Check Focus&Voice Login Page
     Open Browser To Login Page
     Press Keys    None    TAB
@@ -126,7 +134,7 @@ Test About-us
     Login
     Wait Until Element Is Visible    id:logout-button
     Click Element    id:about-us
-    Wait Until Element Is Visible    //*[@id="wrapper"]/div/div/div/div[1]
+    Wait Until Element Is Visible    id:close-modal
     Click Element    id:close-modal
     Close Browser
 
@@ -142,9 +150,14 @@ Test All-shortcut-keys
     Open Browser To Login Page
     Login with Shortcutkey
     Wait Until Element Is Visible    id:music-box
-    Press Keys    id:music-box    SHIFT+O
-    Press Keys    id:music-box    SHIFT+N
-    Press Keys    id:about-us    SHIFT+K
-    Press Keys    id:about-us    SHIFT+J
+    Press Keys    id:music-box    SHIFT+M
+    Wait Until Element Is Visible    id:close-modal
+    Press Keys    id:close-modal    SHIFT+C
+    Press Keys    id:about-us    SHIFT+A
+    Wait Until Element Is Visible    id:close-modal
+    Press Keys    id:close-modal    SHIFT+C
     Press Keys    id:github    SHIFT+V
+    Wait Until Element Is Visible    id:logout-button
+    Press Keys    id:logout-button    SHIFT+O
+    Wait Until Element Is Visible    id:login-button
     Close Browser
