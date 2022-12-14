@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+
 /* 
 * The function is used to Press the shortcut key. .
 * There are two types to choose from: one-button and multi-button.
@@ -43,6 +44,7 @@ export const useMultipleKeyPress = (callback, targetKeys) => {
     window.removeEventListener('keydown', keydownHandler);
   };
 };
+
 
 // export const useOnKeyPress first parameter  return callback function second parameter use shortcut key only one key press
 export const useOnKeyPress = (callback, targetKey) => {
